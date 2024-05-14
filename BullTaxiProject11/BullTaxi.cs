@@ -8,9 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Reflection.Emit;
+using System.Net.Http;
+using System.Net;
+using System.Runtime.InteropServices;
+using System.Net;
+using System.Net.Http;
+using System.Text.Json;
 
 namespace MainFormBullTaxi
 {
@@ -18,11 +23,19 @@ namespace MainFormBullTaxi
     public partial class LoginForm : Form
     {
         bool drag = false;
-        
+        private HttpClient client;
+        private CookieContainer cookies;
+
+
         public LoginForm()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            cookies = new CookieContainer();
+            var handler = new HttpClientHandler();
+            handler.CookieContainer = cookies;
+
+            HttpClient client = new HttpClient(handler);
         }
 
         
@@ -107,6 +120,18 @@ namespace MainFormBullTaxi
 
         private void button7_Click(object sender, EventArgs e)
         {
+            Dictionary<string, string> parameters = new Dictionary<string, string>()
+{
+{"username", ""},
+{"password", ""},
+};
+            Uri uri = new Uri("http://127.0.0.1:8000/login/");
+            FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
+            var answer = client.PostAsync(uri, form).Result;
+            Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string,
+            string>>(answer.Content.ReadAsStringAsync().Result);
+            var csrfToken = cookies.GetCookies(uri).Cast<System.Net.Cookie>().FirstOrDefault(c => c.Name == "csrftoken")?.Value;
+            client.DefaultRequestHeaders.Add("X-Csrftoken", csrfToken);
 
             this.Hide();
             BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
@@ -147,6 +172,11 @@ namespace MainFormBullTaxi
         }
 
         private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
         }
