@@ -82,6 +82,7 @@
             this.button2.TabIndex = 0;
             this.button2.Text = "Зміна даних користувача";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel2
             // 

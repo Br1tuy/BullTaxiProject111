@@ -234,6 +234,7 @@
             this.button1.Size = new System.Drawing.Size(35, 35);
             this.button1.TabIndex = 13;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_3);
             // 
             // button2
             // 
@@ -248,6 +249,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // closebtn
             // 
@@ -287,6 +289,10 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1915, 43);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // btnHam
             // 

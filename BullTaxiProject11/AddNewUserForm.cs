@@ -164,5 +164,10 @@ namespace BullTaxi
                 WindowState = FormWindowState.Normal;
             }
         }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

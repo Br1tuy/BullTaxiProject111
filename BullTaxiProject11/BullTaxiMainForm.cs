@@ -18,8 +18,10 @@ namespace MainFormBullTaxi
     {
         FormUser user;
         OrdersForm orders;
-        
-        
+        Point dragCursorPoint;
+        Point dragFormPoint;
+        bool dragging = false;
+
 
         public BullTaxiMainForm()
         {
@@ -71,6 +73,7 @@ namespace MainFormBullTaxi
 
         private void button6_Click(object sender, EventArgs e)
         {
+
             this.Close();
             LoginForm LoginForm = new LoginForm();
             LoginForm.Show();
@@ -280,6 +283,56 @@ namespace MainFormBullTaxi
             {
                 user.Activate();
             }
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+
+            }
+            else
+            {
+                WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                dragging = true;
+                dragCursorPoint = Cursor.Position;
+                dragFormPoint = this.Location;
+            }
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                dragging = false;
+            }
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -74,11 +74,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCompletedOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCompletedOrderForm.Designer.cs">
+      <DependentUpon>AddCompletedOrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddNewUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddNewUserForm.Designer.cs">
       <DependentUpon>AddNewUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOrdersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOrdersForm.Designer.cs">
+      <DependentUpon>AddOrdersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BullTaxi.cs">
       <SubType>Form</SubType>
@@ -91,6 +103,18 @@
     </Compile>
     <Compile Include="BullTaxiMainForm.Designer.cs">
       <DependentUpon>BullTaxiMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeActiveOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeActiveOrderForm.Designer.cs">
+      <DependentUpon>ChangeActiveOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangingCompletedOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangingCompletedOrderForm.Designer.cs">
+      <DependentUpon>ChangingCompletedOrderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUser.cs">
       <SubType>Form</SubType>
@@ -106,14 +130,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddCompletedOrderForm.resx">
+      <DependentUpon>AddCompletedOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddNewUserForm.resx">
       <DependentUpon>AddNewUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOrdersForm.resx">
+      <DependentUpon>AddOrdersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BullTaxi.resx">
       <DependentUpon>BullTaxi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BullTaxiMainForm.resx">
       <DependentUpon>BullTaxiMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeActiveOrderForm.resx">
+      <DependentUpon>ChangeActiveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangingCompletedOrderForm.resx">
+      <DependentUpon>ChangingCompletedOrderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
