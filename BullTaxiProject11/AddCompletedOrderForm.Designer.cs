@@ -268,7 +268,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label4.Location = new System.Drawing.Point(355, 144);
+            this.label4.Location = new System.Drawing.Point(358, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 32);
             this.label4.TabIndex = 22;

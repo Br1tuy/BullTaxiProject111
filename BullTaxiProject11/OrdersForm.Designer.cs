@@ -179,6 +179,7 @@
             this.button7.TabIndex = 0;
             this.button7.Text = "Додати завершене замовлення";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel8
             // 
@@ -199,6 +200,7 @@
             this.button8.TabIndex = 0;
             this.button8.Text = "Показ завершених замовленнь";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button6
             // 

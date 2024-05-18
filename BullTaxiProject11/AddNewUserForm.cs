@@ -13,10 +13,12 @@ namespace BullTaxi
 {
     public partial class AddNewUserForm : Form
     {
+        private const string PlaceholderText = "Ім'я";
         public AddNewUserForm()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+            textBox6.Text = PlaceholderText;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -168,6 +170,29 @@ namespace BullTaxi
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_Enter(object sender, EventArgs e)
+        {
+            if (textBox6.Text == PlaceholderText)
+            {
+                textBox6.Text = "";
+                textBox6.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox6_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox6.Text))
+            {
+                textBox6.Text = PlaceholderText;
+                textBox6.ForeColor = Color.Gray;
+            }
         }
     }
 }
