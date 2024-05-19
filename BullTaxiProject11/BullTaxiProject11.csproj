@@ -110,6 +110,12 @@
     <Compile Include="ChangeActiveOrderForm.Designer.cs">
       <DependentUpon>ChangeActiveOrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeOrgerUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeOrgerUserForm.Designer.cs">
+      <DependentUpon>ChangeOrgerUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangingCompletedOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangeActiveOrderForm.resx">
       <DependentUpon>ChangeActiveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeOrgerUserForm.resx">
+      <DependentUpon>ChangeOrgerUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangingCompletedOrderForm.resx">
       <DependentUpon>ChangingCompletedOrderForm.cs</DependentUpon>

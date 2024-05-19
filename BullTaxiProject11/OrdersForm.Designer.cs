@@ -273,6 +273,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OrdersForm";
             this.Text = "OrdersForm";
+            this.Load += new System.EventHandler(this.OrdersForm_Load);
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

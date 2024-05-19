@@ -48,6 +48,13 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -78,13 +85,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -99,6 +102,8 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel9.SuspendLayout();
+            this.panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.panel8.SuspendLayout();
@@ -115,8 +120,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel12.SuspendLayout();
-            this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -397,6 +402,7 @@
             // panel9
             // 
             this.panel9.AutoSize = true;
+            this.panel9.Controls.Add(this.panel18);
             this.panel9.Controls.Add(this.label11);
             this.panel9.Controls.Add(this.panel17);
             this.panel9.Controls.Add(this.label10);
@@ -422,6 +428,82 @@
             this.panel9.Size = new System.Drawing.Size(521, 543);
             this.panel9.TabIndex = 7;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.label11.Location = new System.Drawing.Point(55, 302);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(424, 32);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "ПІБ, гендер та номер телефону";
+            // 
+            // panel17
+            // 
+            this.panel17.BackColor = System.Drawing.SystemColors.Control;
+            this.panel17.Controls.Add(this.textBox13);
+            this.panel17.Controls.Add(this.pictureBox15);
+            this.panel17.Location = new System.Drawing.Point(14, 398);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(226, 45);
+            this.panel17.TabIndex = 12;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.textBox13.Location = new System.Drawing.Point(52, 8);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(164, 26);
+            this.textBox13.TabIndex = 5;
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
+            this.textBox13.Enter += new System.EventHandler(this.textBox13_Enter);
+            this.textBox13.Leave += new System.EventHandler(this.textBox13_Leave);
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 4;
+            this.pictureBox15.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.label10.Location = new System.Drawing.Point(8, 204);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(103, 32);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Пошта";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.label9.Location = new System.Drawing.Point(3, 117);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(249, 32);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "День народження";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.label8.Location = new System.Drawing.Point(320, 117);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 32);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "ID";
             // 
             // label7
             // 
@@ -452,6 +534,8 @@
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(164, 26);
             this.textBox12.TabIndex = 5;
+            this.textBox12.Enter += new System.EventHandler(this.textBox12_Enter);
+            this.textBox12.Leave += new System.EventHandler(this.textBox12_Leave);
             // 
             // pictureBox14
             // 
@@ -468,7 +552,7 @@
             this.panel8.BackColor = System.Drawing.SystemColors.Control;
             this.panel8.Controls.Add(this.textBox6);
             this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Location = new System.Drawing.Point(14, 337);
+            this.panel8.Location = new System.Drawing.Point(14, 345);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(226, 45);
             this.panel8.TabIndex = 11;
@@ -616,7 +700,7 @@
             this.panel10.BackColor = System.Drawing.SystemColors.Control;
             this.panel10.Controls.Add(this.pictureBox8);
             this.panel10.Controls.Add(this.textBox7);
-            this.panel10.Location = new System.Drawing.Point(271, 337);
+            this.panel10.Location = new System.Drawing.Point(271, 345);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(238, 45);
             this.panel10.TabIndex = 5;
@@ -740,78 +824,35 @@
             this.panel12.TabIndex = 6;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
-            // label8
+            // panel18
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label8.Location = new System.Drawing.Point(320, 117);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 32);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "ID";
+            this.panel18.BackColor = System.Drawing.SystemColors.Control;
+            this.panel18.Controls.Add(this.pictureBox16);
+            this.panel18.Controls.Add(this.textBox14);
+            this.panel18.Location = new System.Drawing.Point(271, 398);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(238, 45);
+            this.panel18.TabIndex = 7;
             // 
-            // label9
+            // pictureBox16
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label9.Location = new System.Drawing.Point(3, 117);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(249, 32);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "День народження";
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(15, 8);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox16.TabIndex = 6;
+            this.pictureBox16.TabStop = false;
             // 
-            // label10
+            // textBox14
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label10.Location = new System.Drawing.Point(8, 204);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 32);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Пошта";
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.SystemColors.Control;
-            this.panel17.Controls.Add(this.textBox13);
-            this.panel17.Controls.Add(this.pictureBox15);
-            this.panel17.Location = new System.Drawing.Point(14, 398);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(226, 45);
-            this.panel17.TabIndex = 12;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox13.Location = new System.Drawing.Point(52, 8);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(164, 26);
-            this.textBox13.TabIndex = 5;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(8, 8);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(36, 26);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 4;
-            this.pictureBox15.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label11.Location = new System.Drawing.Point(166, 302);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(200, 32);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "ПІБ та Гендер";
+            this.textBox14.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.textBox14.Location = new System.Drawing.Point(55, 10);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(171, 26);
+            this.textBox14.TabIndex = 5;
+            this.textBox14.UseSystemPasswordChar = true;
             // 
             // AddNewUserForm
             // 
@@ -843,6 +884,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
@@ -867,9 +911,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -940,5 +984,8 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.TextBox textBox14;
     }
 }

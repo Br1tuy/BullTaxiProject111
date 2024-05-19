@@ -21,7 +21,8 @@ namespace BullTaxiProject11
             timer = new Timer();
             timer.Interval = 10; // Set the interval here if it's constant
             timer.Tick += new EventHandler(timerTick);
-          
+            this.StartPosition = FormStartPosition.CenterScreen;
+
 
         }
 
@@ -90,6 +91,13 @@ namespace BullTaxiProject11
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ChangingCompletedOrderForm changingCompletedOrderForm = new ChangingCompletedOrderForm();
+            changingCompletedOrderForm.Show();
+        }
+
+        private void OrdersForm_Load(object sender, EventArgs e)
         {
 
         }

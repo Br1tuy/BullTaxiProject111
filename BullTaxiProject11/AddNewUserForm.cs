@@ -14,11 +14,15 @@ namespace BullTaxi
     public partial class AddNewUserForm : Form
     {
         private const string PlaceholderText = "Ім'я";
+        private const string PlaceholderText1 = "Прізвище";
+        private const string PlaceholderText2 = "По батькові";
         public AddNewUserForm()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
             textBox6.Text = PlaceholderText;
+            textBox13.Text = PlaceholderText1;
+            textBox12.Text = PlaceholderText2;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -191,6 +195,47 @@ namespace BullTaxi
             if (string.IsNullOrWhiteSpace(textBox6.Text))
             {
                 textBox6.Text = PlaceholderText;
+                textBox6.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox13_Enter(object sender, EventArgs e)
+        {
+            if (textBox13.Text == PlaceholderText1)
+            {
+                textBox13.Text = "";
+                textBox13.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox13_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox13.Text))
+            {
+                textBox13.Text = PlaceholderText1;
+                textBox13.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBox12_Enter(object sender, EventArgs e)
+        {
+            if (textBox12.Text == PlaceholderText2)
+            {
+                textBox12.Text = "";
+                textBox12.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox12_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(textBox12.Text))
+            {
+                textBox6.Text = PlaceholderText2;
                 textBox6.ForeColor = Color.Gray;
             }
         }

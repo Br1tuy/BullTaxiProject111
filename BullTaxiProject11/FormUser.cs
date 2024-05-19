@@ -1,4 +1,5 @@
-﻿using MainFormBullTaxi;
+﻿using BullTaxiProject11;
+using MainFormBullTaxi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,7 +40,9 @@ namespace BullTaxi
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            ChangeOrgerUserForm changeOrgerUserForm = new ChangeOrgerUserForm();
+            changeOrgerUserForm.Show();
         }
     }
 }
