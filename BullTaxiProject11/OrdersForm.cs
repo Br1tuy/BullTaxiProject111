@@ -111,5 +111,10 @@ namespace BullTaxiProject11
                 dataGridView1.Rows.Add();
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

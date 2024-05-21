@@ -18,10 +18,21 @@ namespace BullTaxi
         {
             InitializeComponent();
         }
-
+        const int TABLE_ROW_COUNT = 10;
+        const int TABLE_COLUMN_COUNT = 10;
         private void FormUser_Load(object sender, EventArgs e)
         {
+            
+                for (int c = 0; c < TABLE_COLUMN_COUNT; c++)
+                {
+                    dataGridView1.Columns.Add(c.ToString(), c.ToString());
 
+                }
+                for (int r = 0; r < TABLE_ROW_COUNT - 1; r++)
+                {
+                    dataGridView1.Rows.Add();
+                }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -43,6 +54,11 @@ namespace BullTaxi
             this.Close();
             ChangeOrgerUserForm changeOrgerUserForm = new ChangeOrgerUserForm();
             changeOrgerUserForm.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
