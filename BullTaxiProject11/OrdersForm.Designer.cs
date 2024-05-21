@@ -47,6 +47,7 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,6 +57,7 @@
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -254,12 +256,23 @@
             this.label1.Text = "00:00:00:00";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(23, 200);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1900, 950);
+            this.dataGridView1.TabIndex = 13;
+            // 
             // OrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1935, 1200);
             this.ControlBox = false;
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -283,6 +296,7 @@
             this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -308,5 +322,6 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

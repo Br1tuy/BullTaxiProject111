@@ -25,6 +25,8 @@ namespace BullTaxiProject11
 
 
         }
+        const int TABLE_ROW_COUNT = 10;
+        const int TABLE_COLUMN_COUNT = 10;
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -99,7 +101,15 @@ namespace BullTaxiProject11
 
         private void OrdersForm_Load(object sender, EventArgs e)
         {
+            for(int c =0; c < TABLE_COLUMN_COUNT; c++)
+            {
+                dataGridView1.Columns.Add(c.ToString(), c.ToString ());
 
+            }
+            for(int r = 0; r < TABLE_ROW_COUNT - 1; r++)
+            {
+                dataGridView1.Rows.Add();
+            }
         }
     }
 }
