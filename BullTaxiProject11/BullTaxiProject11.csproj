@@ -122,6 +122,24 @@
     <Compile Include="ChangingCompletedOrderForm.Designer.cs">
       <DependentUpon>ChangingCompletedOrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DeleteActiveOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteActiveOrderForm.Designer.cs">
+      <DependentUpon>DeleteActiveOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCompletedOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCompletedOrderForm.Designer.cs">
+      <DependentUpon>DeleteCompletedOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUserForm.Designer.cs">
+      <DependentUpon>DeleteUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +177,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChangingCompletedOrderForm.resx">
       <DependentUpon>ChangingCompletedOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteActiveOrderForm.resx">
+      <DependentUpon>DeleteActiveOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCompletedOrderForm.resx">
+      <DependentUpon>DeleteCompletedOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUserForm.resx">
+      <DependentUpon>DeleteUserForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>

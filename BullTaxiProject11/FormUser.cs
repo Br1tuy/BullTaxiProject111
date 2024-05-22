@@ -60,5 +60,12 @@ namespace BullTaxi
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DeleteUserForm deleteUserForm = new DeleteUserForm();
+            deleteUserForm.Show();
+        }
     }
 }

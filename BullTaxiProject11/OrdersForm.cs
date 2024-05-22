@@ -19,7 +19,7 @@ namespace BullTaxiProject11
         {
             InitializeComponent();
             timer = new Timer();
-            timer.Interval = 10; // Set the interval here if it's constant
+            timer.Interval = 10; 
             timer.Tick += new EventHandler(timerTick);
             this.StartPosition = FormStartPosition.CenterScreen;
 
@@ -115,6 +115,20 @@ namespace BullTaxiProject11
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DeleteActiveOrderForm deleteActiveOrderForm = new DeleteActiveOrderForm();
+            deleteActiveOrderForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DeleteCompletedOrderForm deleteCompletedOrder = new DeleteCompletedOrderForm();
+            deleteCompletedOrder.Show();
         }
     }
 }

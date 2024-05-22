@@ -586,7 +586,7 @@
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.panel8.Location = new System.Drawing.Point(300, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(449, 528);
+            this.panel8.Size = new System.Drawing.Size(452, 528);
             this.panel8.TabIndex = 5;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
