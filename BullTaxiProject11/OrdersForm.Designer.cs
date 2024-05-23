@@ -45,6 +45,8 @@
             this.ChangeCompletedOrderButton = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Table = new System.Windows.Forms.DataGridView();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.ActiveOrdersMapButton = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,6 +56,7 @@
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Table)).BeginInit();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddActiveOrderButton
@@ -62,9 +65,8 @@
             this.AddActiveOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddActiveOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.AddActiveOrderButton.Location = new System.Drawing.Point(0, 0);
-            this.AddActiveOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AddActiveOrderButton.Name = "AddActiveOrderButton";
-            this.AddActiveOrderButton.Size = new System.Drawing.Size(330, 109);
+            this.AddActiveOrderButton.Size = new System.Drawing.Size(220, 70);
             this.AddActiveOrderButton.TabIndex = 0;
             this.AddActiveOrderButton.Text = "Додати активне замовлення";
             this.AddActiveOrderButton.UseVisualStyleBackColor = false;
@@ -73,19 +75,17 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.AddActiveOrderButton);
-            this.panel5.Location = new System.Drawing.Point(398, 19);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Location = new System.Drawing.Point(265, 12);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(330, 109);
+            this.panel5.Size = new System.Drawing.Size(220, 70);
             this.panel5.TabIndex = 6;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.ChangeActiveOrderButton);
-            this.panel1.Location = new System.Drawing.Point(736, 19);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Location = new System.Drawing.Point(491, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(330, 109);
+            this.panel1.Size = new System.Drawing.Size(220, 70);
             this.panel1.TabIndex = 7;
             // 
             // ChangeActiveOrderButton
@@ -94,9 +94,8 @@
             this.ChangeActiveOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeActiveOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ChangeActiveOrderButton.Location = new System.Drawing.Point(0, 0);
-            this.ChangeActiveOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ChangeActiveOrderButton.Name = "ChangeActiveOrderButton";
-            this.ChangeActiveOrderButton.Size = new System.Drawing.Size(330, 109);
+            this.ChangeActiveOrderButton.Size = new System.Drawing.Size(220, 70);
             this.ChangeActiveOrderButton.TabIndex = 0;
             this.ChangeActiveOrderButton.Text = "Змінити активне замовлення";
             this.ChangeActiveOrderButton.UseVisualStyleBackColor = false;
@@ -105,10 +104,9 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.DeleteActiveOrderButton);
-            this.panel2.Location = new System.Drawing.Point(1076, 19);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Location = new System.Drawing.Point(717, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(375, 109);
+            this.panel2.Size = new System.Drawing.Size(250, 70);
             this.panel2.TabIndex = 7;
             // 
             // DeleteActiveOrderButton
@@ -117,9 +115,8 @@
             this.DeleteActiveOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeleteActiveOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.DeleteActiveOrderButton.Location = new System.Drawing.Point(0, 0);
-            this.DeleteActiveOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DeleteActiveOrderButton.Name = "DeleteActiveOrderButton";
-            this.DeleteActiveOrderButton.Size = new System.Drawing.Size(375, 109);
+            this.DeleteActiveOrderButton.Size = new System.Drawing.Size(250, 70);
             this.DeleteActiveOrderButton.TabIndex = 0;
             this.DeleteActiveOrderButton.Text = "Видалити активне замовлення";
             this.DeleteActiveOrderButton.UseVisualStyleBackColor = false;
@@ -128,10 +125,9 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.ViewActiveOrderButton);
-            this.panel3.Location = new System.Drawing.Point(21, 19);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Location = new System.Drawing.Point(14, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(375, 109);
+            this.panel3.Size = new System.Drawing.Size(250, 70);
             this.panel3.TabIndex = 8;
             // 
             // ViewActiveOrderButton
@@ -139,10 +135,9 @@
             this.ViewActiveOrderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.ViewActiveOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ViewActiveOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ViewActiveOrderButton.Location = new System.Drawing.Point(-4, 0);
-            this.ViewActiveOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ViewActiveOrderButton.Location = new System.Drawing.Point(-3, 0);
             this.ViewActiveOrderButton.Name = "ViewActiveOrderButton";
-            this.ViewActiveOrderButton.Size = new System.Drawing.Size(375, 109);
+            this.ViewActiveOrderButton.Size = new System.Drawing.Size(250, 70);
             this.ViewActiveOrderButton.TabIndex = 0;
             this.ViewActiveOrderButton.Text = "Показ активних замовленнь";
             this.ViewActiveOrderButton.UseVisualStyleBackColor = false;
@@ -151,10 +146,9 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.DeleteCompletedOrderButton);
-            this.panel4.Location = new System.Drawing.Point(1076, 138);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Location = new System.Drawing.Point(717, 88);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(375, 109);
+            this.panel4.Size = new System.Drawing.Size(250, 70);
             this.panel4.TabIndex = 9;
             // 
             // DeleteCompletedOrderButton
@@ -163,9 +157,8 @@
             this.DeleteCompletedOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DeleteCompletedOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.DeleteCompletedOrderButton.Location = new System.Drawing.Point(0, 0);
-            this.DeleteCompletedOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DeleteCompletedOrderButton.Name = "DeleteCompletedOrderButton";
-            this.DeleteCompletedOrderButton.Size = new System.Drawing.Size(375, 109);
+            this.DeleteCompletedOrderButton.Size = new System.Drawing.Size(250, 70);
             this.DeleteCompletedOrderButton.TabIndex = 0;
             this.DeleteCompletedOrderButton.Text = "Видалення завершеного замовлення";
             this.DeleteCompletedOrderButton.UseVisualStyleBackColor = false;
@@ -174,10 +167,9 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.AddCompletedOrderButton);
-            this.panel7.Location = new System.Drawing.Point(400, 138);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel7.Location = new System.Drawing.Point(267, 88);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(327, 109);
+            this.panel7.Size = new System.Drawing.Size(218, 70);
             this.panel7.TabIndex = 10;
             // 
             // AddCompletedOrderButton
@@ -185,10 +177,9 @@
             this.AddCompletedOrderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.AddCompletedOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.AddCompletedOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AddCompletedOrderButton.Location = new System.Drawing.Point(-10, 0);
-            this.AddCompletedOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddCompletedOrderButton.Location = new System.Drawing.Point(-7, 0);
             this.AddCompletedOrderButton.Name = "AddCompletedOrderButton";
-            this.AddCompletedOrderButton.Size = new System.Drawing.Size(338, 109);
+            this.AddCompletedOrderButton.Size = new System.Drawing.Size(225, 70);
             this.AddCompletedOrderButton.TabIndex = 0;
             this.AddCompletedOrderButton.Text = "Додати завершене замовлення";
             this.AddCompletedOrderButton.UseVisualStyleBackColor = false;
@@ -197,10 +188,9 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.ViewCompletedOrderButton);
-            this.panel8.Location = new System.Drawing.Point(16, 138);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Location = new System.Drawing.Point(11, 88);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(372, 109);
+            this.panel8.Size = new System.Drawing.Size(248, 70);
             this.panel8.TabIndex = 11;
             // 
             // ViewCompletedOrderButton
@@ -209,9 +199,8 @@
             this.ViewCompletedOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ViewCompletedOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ViewCompletedOrderButton.Location = new System.Drawing.Point(0, 0);
-            this.ViewCompletedOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ViewCompletedOrderButton.Name = "ViewCompletedOrderButton";
-            this.ViewCompletedOrderButton.Size = new System.Drawing.Size(375, 109);
+            this.ViewCompletedOrderButton.Size = new System.Drawing.Size(250, 70);
             this.ViewCompletedOrderButton.TabIndex = 0;
             this.ViewCompletedOrderButton.Text = "Показ завершених замовленнь";
             this.ViewCompletedOrderButton.UseVisualStyleBackColor = false;
@@ -223,9 +212,8 @@
             this.ChangeCompletedOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ChangeCompletedOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ChangeCompletedOrderButton.Location = new System.Drawing.Point(0, 0);
-            this.ChangeCompletedOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ChangeCompletedOrderButton.Name = "ChangeCompletedOrderButton";
-            this.ChangeCompletedOrderButton.Size = new System.Drawing.Size(326, 109);
+            this.ChangeCompletedOrderButton.Size = new System.Drawing.Size(217, 70);
             this.ChangeCompletedOrderButton.TabIndex = 0;
             this.ChangeCompletedOrderButton.Text = "Зміна завершеного замовлення";
             this.ChangeCompletedOrderButton.UseVisualStyleBackColor = false;
@@ -234,30 +222,51 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.ChangeCompletedOrderButton);
-            this.panel6.Location = new System.Drawing.Point(736, 138);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel6.Location = new System.Drawing.Point(491, 88);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(330, 109);
+            this.panel6.Size = new System.Drawing.Size(220, 70);
             this.panel6.TabIndex = 9;
             // 
             // Table
             // 
+            this.Table.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Table.Location = new System.Drawing.Point(34, 312);
-            this.Table.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Table.Location = new System.Drawing.Point(23, 200);
             this.Table.Name = "Table";
             this.Table.RowHeadersWidth = 51;
             this.Table.RowTemplate.Height = 24;
-            this.Table.Size = new System.Drawing.Size(2850, 1484);
+            this.Table.Size = new System.Drawing.Size(1900, 950);
             this.Table.TabIndex = 13;
-            this.Table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.ActiveOrdersMapButton);
+            this.panel9.Location = new System.Drawing.Point(973, 54);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(250, 70);
+            this.panel9.TabIndex = 10;
+            // 
+            // ActiveOrdersMapButton
+            // 
+            this.ActiveOrdersMapButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ActiveOrdersMapButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ActiveOrdersMapButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ActiveOrdersMapButton.Location = new System.Drawing.Point(0, 0);
+            this.ActiveOrdersMapButton.Name = "ActiveOrdersMapButton";
+            this.ActiveOrdersMapButton.Size = new System.Drawing.Size(250, 70);
+            this.ActiveOrdersMapButton.TabIndex = 0;
+            this.ActiveOrdersMapButton.Text = "Карта активних замовлень";
+            this.ActiveOrdersMapButton.UseVisualStyleBackColor = false;
+            this.ActiveOrdersMapButton.Click += new System.EventHandler(this.ActiveOrdersMapButton_Click);
             // 
             // OrdersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1813, 1098);
+            this.ClientSize = new System.Drawing.Size(1900, 1222);
             this.ControlBox = false;
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.Table);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
@@ -268,7 +277,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "OrdersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "OrdersForm";
@@ -282,6 +290,7 @@
             this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Table)).EndInit();
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -305,5 +314,7 @@
         private System.Windows.Forms.Button ChangeCompletedOrderButton;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.DataGridView Table;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button ActiveOrdersMapButton;
     }
 }

@@ -100,7 +100,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(93, 204);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(197, 51);
+            this.label2.Size = new System.Drawing.Size(125, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bull Taxi";
             // 
@@ -171,7 +171,7 @@
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.textBox3.Location = new System.Drawing.Point(52, 8);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(370, 38);
+            this.textBox3.Size = new System.Drawing.Size(370, 26);
             this.textBox3.TabIndex = 5;
             // 
             // pictureBox4
@@ -189,7 +189,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.linkLabel1.Location = new System.Drawing.Point(98, 501);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(211, 25);
+            this.linkLabel1.Size = new System.Drawing.Size(134, 16);
             this.linkLabel1.TabIndex = 10;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "10volodj@gmail.com";
@@ -240,7 +240,7 @@
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.textBox2.Location = new System.Drawing.Point(55, 12);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(370, 38);
+            this.textBox2.Size = new System.Drawing.Size(370, 26);
             this.textBox2.TabIndex = 5;
             this.textBox2.UseSystemPasswordChar = true;
             // 
@@ -273,7 +273,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.label3.Location = new System.Drawing.Point(31, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(380, 51);
+            this.label3.Size = new System.Drawing.Size(240, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "Вхід у застосунок";
             // 
@@ -334,7 +334,7 @@
             this.TaxiNameLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.TaxiNameLabel.Location = new System.Drawing.Point(93, 204);
             this.TaxiNameLabel.Name = "TaxiNameLabel";
-            this.TaxiNameLabel.Size = new System.Drawing.Size(197, 51);
+            this.TaxiNameLabel.Size = new System.Drawing.Size(125, 32);
             this.TaxiNameLabel.TabIndex = 2;
             this.TaxiNameLabel.Text = "Bull Taxi";
             // 
@@ -342,9 +342,9 @@
             // 
             this.panel6.Controls.Add(this.CloseButton);
             this.panel6.Controls.Add(this.TurnButton);
-            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Location = new System.Drawing.Point(-16, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(453, 43);
+            this.panel6.Size = new System.Drawing.Size(469, 43);
             this.panel6.TabIndex = 13;
             this.panel6.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDoubleClick);
             this.panel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDown);
@@ -397,7 +397,7 @@
             this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.Login.Location = new System.Drawing.Point(52, 8);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(370, 38);
+            this.Login.Size = new System.Drawing.Size(370, 26);
             this.Login.TabIndex = 5;
             // 
             // UserPictureBox
@@ -416,7 +416,7 @@
             this.EmailLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.EmailLinkLabel.Location = new System.Drawing.Point(98, 501);
             this.EmailLinkLabel.Name = "EmailLinkLabel";
-            this.EmailLinkLabel.Size = new System.Drawing.Size(211, 25);
+            this.EmailLinkLabel.Size = new System.Drawing.Size(134, 16);
             this.EmailLinkLabel.TabIndex = 10;
             this.EmailLinkLabel.TabStop = true;
             this.EmailLinkLabel.Text = "10volodj@gmail.com";
@@ -469,7 +469,7 @@
             this.Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.Password.Location = new System.Drawing.Point(55, 12);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(370, 38);
+            this.Password.Size = new System.Drawing.Size(370, 26);
             this.Password.TabIndex = 5;
             this.Password.UseSystemPasswordChar = true;
             // 
@@ -504,7 +504,7 @@
             this.NameWindowLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.NameWindowLabel.Location = new System.Drawing.Point(101, 150);
             this.NameWindowLabel.Name = "NameWindowLabel";
-            this.NameWindowLabel.Size = new System.Drawing.Size(380, 51);
+            this.NameWindowLabel.Size = new System.Drawing.Size(240, 32);
             this.NameWindowLabel.TabIndex = 3;
             this.NameWindowLabel.Text = "Вхід у застосунок";
             // 
@@ -545,7 +545,7 @@
             this.ShowPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.ShowPassword.Location = new System.Drawing.Point(55, 287);
             this.ShowPassword.Name = "ShowPassword";
-            this.ShowPassword.Size = new System.Drawing.Size(244, 33);
+            this.ShowPassword.Size = new System.Drawing.Size(151, 22);
             this.ShowPassword.TabIndex = 15;
             this.ShowPassword.Text = "Показати пароль";
             this.ShowPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

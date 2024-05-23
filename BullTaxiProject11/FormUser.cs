@@ -84,5 +84,11 @@ namespace BullTaxi
                 MessageBox.Show(dict["Message"]);
             }
         }
+
+        private void DriversMapButton_Click(object sender, EventArgs e)
+        {
+            DriversMapForm driversMapForm = new DriversMapForm();
+            driversMapForm.Show();
+        }
     }
 }

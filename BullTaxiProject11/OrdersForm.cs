@@ -98,10 +98,6 @@ namespace BullTaxiProject11
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void DeleteActiveOrderButton_Click(object sender, EventArgs e)
         {
@@ -151,6 +147,12 @@ namespace BullTaxiProject11
                 dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
                 MessageBox.Show(dict["Message"]);
             }
+        }
+
+        private void ActiveOrdersMapButton_Click(object sender, EventArgs e)
+        {
+            ActiveOrdersMapForm activeOrdersMapForm = new ActiveOrdersMapForm();
+            activeOrdersMapForm.Show();
         }
     }
 }

@@ -52,48 +52,52 @@ namespace MainFormBullTaxi
 
         private void EntryButton_Click(object sender, EventArgs e)
         {
-            Uri uri = new Uri("http://127.0.0.1:8000/login/");
+            /* Uri uri = new Uri("http://127.0.0.1:8000/login/");
 
-            if (Login.Text == "") MessageBox.Show("Введіть логін.");
-            else if (Password.Text == "") MessageBox.Show("Введіть пароль.");
-            else
-            {
-                Dictionary<string, string> parameters = new Dictionary<string, string>()
-                {
-                    {"username", Login.Text},
-                    {"password", Password.Text},
-                };
+             if (Login.Text == "") MessageBox.Show("Введіть логін.");
+             else if (Password.Text == "") MessageBox.Show("Введіть пароль.");
+             else
+             {
+                 Dictionary<string, string> parameters = new Dictionary<string, string>()
+                 {
+                     {"username", Login.Text},
+                     {"password", Password.Text},
+                 };
 
-                FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
-            
-                var answer = ProgramClient.Client.PostAsync(uri, form).Result;
-                Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
-                var csrfToken = ProgramClient.Cookies.GetCookies(uri).Cast<System.Net.Cookie>().FirstOrDefault(c => c.Name == "csrftoken")?.Value;
-           
-                ProgramClient.Client.DefaultRequestHeaders.Add("X-Csrftoken", csrfToken);
+                 FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
 
-                if (dict["Status"] == "Success")
-                {
-                    if (dict["User group"] == "Admin")
-                    {
-                        this.Hide();
-                        BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
-                        bullTaxiMainForm.Show();
-                    }
-                    else if (dict["User group"] == "Operator")
-                    {
+                 var answer = ProgramClient.Client.PostAsync(uri, form).Result;
+                 Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
+                 var csrfToken = ProgramClient.Cookies.GetCookies(uri).Cast<System.Net.Cookie>().FirstOrDefault(c => c.Name == "csrftoken")?.Value;
 
-                    }
-                    else if (dict["User group"] == "Spectator")
-                    {
+                 ProgramClient.Client.DefaultRequestHeaders.Add("X-Csrftoken", csrfToken);
 
-                    }
-                }
-                else
-                {
-                    MessageBox.Show(dict["Message"]);
-                }
-            }
+                 if (dict["Status"] == "Success")
+                 {
+                     if (dict["User group"] == "Admin")
+                     {
+                         this.Hide();
+                         BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
+                         bullTaxiMainForm.Show();
+                     }
+                     else if (dict["User group"] == "Operator")
+                     {
+
+                     }
+                     else if (dict["User group"] == "Spectator")
+                     {
+
+                     }
+                 }
+                 else
+                 {
+                     MessageBox.Show(dict["Message"]);
+                 }
+             }
+            */
+            this.Hide();
+            BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
+            bullTaxiMainForm.Show();
         }
 
         private void EmailLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

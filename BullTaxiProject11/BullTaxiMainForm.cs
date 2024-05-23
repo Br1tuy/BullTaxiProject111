@@ -84,7 +84,7 @@ namespace MainFormBullTaxi
                     sidebarTransition.Stop();
                     OrdersButton.Width = SidebarPanel.Width;
                     UsersButton.Width = SidebarPanel.Width;
-                    SettingsButton.Width = SidebarPanel.Width;
+                    
                     ExitButton.Width = SidebarPanel.Width;
                 }
             }
@@ -97,7 +97,7 @@ namespace MainFormBullTaxi
                     sidebarTransition.Stop();
                     OrdersButton.Width = SidebarPanel.Width;
                     UsersButton.Width = SidebarPanel.Width;
-                    SettingsButton.Width = SidebarPanel.Width;
+                    
                     ExitButton.Width = SidebarPanel.Width;
 
                 }
@@ -155,10 +155,6 @@ namespace MainFormBullTaxi
             }
         }
 
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void FullSizeButton_Click(object sender, EventArgs e)
         {
