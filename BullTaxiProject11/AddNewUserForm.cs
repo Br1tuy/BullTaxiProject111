@@ -8,235 +8,104 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BullTaxiProject11;
+using System.Net.Http;
+using System.Text.Json;
+using System.Diagnostics;
 
 namespace BullTaxi
 {
     public partial class AddNewUserForm : Form
     {
-        private const string PlaceholderText = "Ім'я";
-        private const string PlaceholderText1 = "Прізвище";
-        private const string PlaceholderText2 = "По батькові";
         public AddNewUserForm()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            textBox6.Text = PlaceholderText;
-            textBox13.Text = PlaceholderText1;
-            textBox12.Text = PlaceholderText2;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void closebtn_Click(object sender, EventArgs e)
-        {
-
-            this.Close();
-            BullTaxiMainForm BullTaxiMainForm = new BullTaxiMainForm();
-            /*
-            BullTaxiMainForm.Show();
-            */
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel12_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
             BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
             
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void TurnButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void RegistrationButton_Click(object sender, EventArgs e)
         {
-            if (WindowState == FormWindowState.Normal)
+            if (Login.Text == "")
             {
-                WindowState = FormWindowState.Maximized;
-
+                MessageBox.Show("Введіть логін.");
+            }
+            else if (Password.Text == "")
+            {
+                MessageBox.Show("Введіть пароль.");
+            }
+            else if (FirstName.Text == "")
+            {
+                MessageBox.Show("Введіть ім'я.");
+            }
+            else if (LastName.Text == "")
+            {
+                MessageBox.Show("Введіть прізвище.");
+            }
+            else if (Status.Text == "")
+            {
+                MessageBox.Show("Введіть статус.");
+            }
+            else if (Birthday.Text == "")
+            {
+                MessageBox.Show("Введіть день народження.");
+            }
+            else if (Sex.Text == "")
+            {
+                MessageBox.Show("Введіть стать.");
+            }
+            else if (Email.Text == "")
+            {
+                MessageBox.Show("Введіть пошту.");
+            }
+            else if (PhoneNumber.Text == "")
+            {
+                MessageBox.Show("Введіть номер телефону.");
             }
             else
             {
-                WindowState = FormWindowState.Normal;
-            }
-        }
+                Uri uri = new Uri("http://127.0.0.1:8000/registration/");
 
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
+                Dictionary<string, string> parameters = new Dictionary<string, string>()
+                {
+                    {"username", Login.Text},
+                    {"password", Password.Text},
+                    {"status", Status.Text},
+                    {"first name", FirstName.Text},
+                    {"patronymic", Patronymic.Text},
+                    {"last name", LastName.Text},
+                    {"sex", Sex.Text},
+                    {"date of birth", Birthday.Text},
+                    {"email", Email.Text},
+                    {"phone number", PhoneNumber.Text},
+                };
 
-        }
+                FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
+            
+                var answer = ProgramClient.Client.PostAsync(uri, form).Result;
+                Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
 
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_Enter(object sender, EventArgs e)
-        {
-            if (textBox6.Text == PlaceholderText)
-            {
-                textBox6.Text = "";
-                textBox6.ForeColor = Color.Black;
-            }
-        }
-
-        private void textBox6_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox6.Text))
-            {
-                textBox6.Text = PlaceholderText;
-                textBox6.ForeColor = Color.Gray;
-            }
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox13_Enter(object sender, EventArgs e)
-        {
-            if (textBox13.Text == PlaceholderText1)
-            {
-                textBox13.Text = "";
-                textBox13.ForeColor = Color.Black;
-            }
-        }
-
-        private void textBox13_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox13.Text))
-            {
-                textBox13.Text = PlaceholderText1;
-                textBox13.ForeColor = Color.Gray;
-            }
-        }
-
-        private void textBox12_Enter(object sender, EventArgs e)
-        {
-            if (textBox12.Text == PlaceholderText2)
-            {
-                textBox12.Text = "";
-                textBox12.ForeColor = Color.Black;
-            }
-        }
-
-        private void textBox12_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox12.Text))
-            {
-                textBox6.Text = PlaceholderText2;
-                textBox6.ForeColor = Color.Gray;
+                if (dict["Status"] == "Success")
+                {
+                    this.Hide();
+                    BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
+                    bullTaxiMainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show(dict["Message"]);
+                }
             }
         }
     }

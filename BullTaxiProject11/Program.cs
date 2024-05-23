@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BullTaxiProject11;
 
 namespace MainFormBullTaxi
 {
@@ -18,6 +22,11 @@ namespace MainFormBullTaxi
                 SetProcessDPIAware();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            ProgramClient.Handler = new HttpClientHandler();
+            ProgramClient.Handler.CookieContainer = ProgramClient.Cookies;
+            ProgramClient.Client = new HttpClient(ProgramClient.Handler);
+
             Application.Run(new LoginForm());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]

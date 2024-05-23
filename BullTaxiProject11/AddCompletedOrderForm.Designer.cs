@@ -29,90 +29,81 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCompletedOrderForm));
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.TimeLabel = new System.Windows.Forms.Label();
+            this.ClosingTime = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.ClosingTimePictureBox = new System.Windows.Forms.PictureBox();
+            this.LeftPanel = new System.Windows.Forms.Panel();
+            this.TaxiNameLabel = new System.Windows.Forms.Label();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
+            this.UpperPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.TaxiDriver = new System.Windows.Forms.TextBox();
+            this.DriverPictureBox = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Price = new System.Windows.Forms.TextBox();
+            this.PricePictureBox = new System.Windows.Forms.PictureBox();
+            this.PriceLabel = new System.Windows.Forms.Label();
+            this.DriverLabel = new System.Windows.Forms.Label();
+            this.OpeningTime = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.OpeningTimePictureBox = new System.Windows.Forms.PictureBox();
+            this.CloseButton = new System.Windows.Forms.Button();
+            this.TurnButton = new System.Windows.Forms.Button();
+            this.AddressLabel = new System.Windows.Forms.Label();
+            this.WindowNameLabel = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button7 = new System.Windows.Forms.Button();
+            this.FinalAddressPictureBox = new System.Windows.Forms.PictureBox();
+            this.FinalAddress = new System.Windows.Forms.TextBox();
+            this.AddButton = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.StartingAddress = new System.Windows.Forms.TextBox();
+            this.StartingAddressPictureBox = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ClosingTimePictureBox)).BeginInit();
+            this.LeftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
+            this.UpperPanel.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DriverPictureBox)).BeginInit();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PricePictureBox)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OpeningTimePictureBox)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalAddressPictureBox)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StartingAddressPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // TimeLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label1.Location = new System.Drawing.Point(352, 196);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 32);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "Час відкриття замовлення та ID";
+            this.TimeLabel.AutoSize = true;
+            this.TimeLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.TimeLabel.Location = new System.Drawing.Point(458, 501);
+            this.TimeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TimeLabel.Name = "TimeLabel";
+            this.TimeLabel.Size = new System.Drawing.Size(818, 51);
+            this.TimeLabel.TabIndex = 20;
+            this.TimeLabel.Text = "Час відкриття та закриття замовлення";
             // 
-            // textBox2
+            // ClosingTime
             // 
-            this.textBox2.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox2.Location = new System.Drawing.Point(55, 10);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(71, 26);
-            this.textBox2.TabIndex = 5;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.ClosingTime.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ClosingTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ClosingTime.Location = new System.Drawing.Point(82, 16);
+            this.ClosingTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClosingTime.Name = "ClosingTime";
+            this.ClosingTime.Size = new System.Drawing.Size(104, 38);
+            this.ClosingTime.TabIndex = 5;
             // 
             // button4
             // 
@@ -121,9 +112,10 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button4.Location = new System.Drawing.Point(564, 0);
+            this.button4.Location = new System.Drawing.Point(846, 0);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 41);
+            this.button4.Size = new System.Drawing.Size(60, 64);
             this.button4.TabIndex = 3;
             this.button4.Text = "X";
             this.button4.UseVisualStyleBackColor = true;
@@ -135,9 +127,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button5.Location = new System.Drawing.Point(518, 0);
+            this.button5.Location = new System.Drawing.Point(777, 0);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 41);
+            this.button5.Size = new System.Drawing.Size(60, 64);
             this.button5.TabIndex = 11;
             this.button5.Text = "-";
             this.button5.UseVisualStyleBackColor = true;
@@ -145,166 +138,191 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(573, 241);
+            this.panel3.Controls.Add(this.ClosingTimePictureBox);
+            this.panel3.Controls.Add(this.ClosingTime);
+            this.panel3.Location = new System.Drawing.Point(467, 639);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(147, 46);
+            this.panel3.Size = new System.Drawing.Size(220, 72);
             this.panel3.TabIndex = 20;
             // 
-            // panel10
+            // ClosingTimePictureBox
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.panel10.Controls.Add(this.label3);
-            this.panel10.Controls.Add(this.pictureBox10);
-            this.panel10.Controls.Add(this.panel6);
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(300, 486);
-            this.panel10.TabIndex = 20;
+            this.ClosingTimePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("ClosingTimePictureBox.Image")));
+            this.ClosingTimePictureBox.Location = new System.Drawing.Point(19, 16);
+            this.ClosingTimePictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ClosingTimePictureBox.Name = "ClosingTimePictureBox";
+            this.ClosingTimePictureBox.Size = new System.Drawing.Size(40, 42);
+            this.ClosingTimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ClosingTimePictureBox.TabIndex = 6;
+            this.ClosingTimePictureBox.TabStop = false;
             // 
-            // label3
+            // LeftPanel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(88, 202);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 32);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Bull Taxi";
+            this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.LeftPanel.Controls.Add(this.TaxiNameLabel);
+            this.LeftPanel.Controls.Add(this.LogoPictureBox);
+            this.LeftPanel.Controls.Add(this.UpperPanel);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LeftPanel.Name = "LeftPanel";
+            this.LeftPanel.Size = new System.Drawing.Size(450, 950);
+            this.LeftPanel.TabIndex = 20;
             // 
-            // pictureBox10
+            // TaxiNameLabel
             // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(62, 11);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(180, 181);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
+            this.TaxiNameLabel.AutoSize = true;
+            this.TaxiNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaxiNameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.TaxiNameLabel.Location = new System.Drawing.Point(132, 316);
+            this.TaxiNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TaxiNameLabel.Name = "TaxiNameLabel";
+            this.TaxiNameLabel.Size = new System.Drawing.Size(197, 51);
+            this.TaxiNameLabel.TabIndex = 14;
+            this.TaxiNameLabel.Text = "Bull Taxi";
             // 
-            // panel6
+            // LogoPictureBox
             // 
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Location = new System.Drawing.Point(282, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(603, 44);
-            this.panel6.TabIndex = 13;
+            this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
+            this.LogoPictureBox.Location = new System.Drawing.Point(93, 17);
+            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(270, 283);
+            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoPictureBox.TabIndex = 0;
+            this.LogoPictureBox.TabStop = false;
+            // 
+            // UpperPanel
+            // 
+            this.UpperPanel.Controls.Add(this.button4);
+            this.UpperPanel.Controls.Add(this.button5);
+            this.UpperPanel.Location = new System.Drawing.Point(450, 5);
+            this.UpperPanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.UpperPanel.Name = "UpperPanel";
+            this.UpperPanel.Size = new System.Drawing.Size(877, 69);
+            this.UpperPanel.TabIndex = 13;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(546, 137);
+            this.panel4.Controls.Add(this.TaxiDriver);
+            this.panel4.Controls.Add(this.DriverPictureBox);
+            this.panel4.Location = new System.Drawing.Point(467, 414);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(250, 46);
+            this.panel4.Size = new System.Drawing.Size(375, 72);
             this.panel4.TabIndex = 21;
             // 
-            // textBox3
+            // TaxiDriver
             // 
-            this.textBox3.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox3.Location = new System.Drawing.Point(55, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 26);
-            this.textBox3.TabIndex = 5;
+            this.TaxiDriver.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TaxiDriver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.TaxiDriver.Location = new System.Drawing.Point(82, 16);
+            this.TaxiDriver.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TaxiDriver.Name = "TaxiDriver";
+            this.TaxiDriver.Size = new System.Drawing.Size(258, 38);
+            this.TaxiDriver.TabIndex = 5;
             // 
-            // pictureBox4
+            // DriverPictureBox
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
+            this.DriverPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("DriverPictureBox.Image")));
+            this.DriverPictureBox.Location = new System.Drawing.Point(18, 16);
+            this.DriverPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DriverPictureBox.Name = "DriverPictureBox";
+            this.DriverPictureBox.Size = new System.Drawing.Size(40, 42);
+            this.DriverPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.DriverPictureBox.TabIndex = 4;
+            this.DriverPictureBox.TabStop = false;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
-            this.panel5.Controls.Add(this.textBox6);
-            this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(554, 297);
+            this.panel5.Controls.Add(this.Price);
+            this.panel5.Controls.Add(this.PricePictureBox);
+            this.panel5.Location = new System.Drawing.Point(467, 785);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(147, 46);
+            this.panel5.Size = new System.Drawing.Size(220, 72);
             this.panel5.TabIndex = 20;
             // 
-            // textBox6
+            // Price
             // 
-            this.textBox6.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox6.Location = new System.Drawing.Point(55, 10);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(71, 26);
-            this.textBox6.TabIndex = 5;
+            this.Price.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.Price.Location = new System.Drawing.Point(82, 16);
+            this.Price.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Price.Name = "Price";
+            this.Price.Size = new System.Drawing.Size(104, 38);
+            this.Price.TabIndex = 5;
             // 
-            // pictureBox5
+            // PricePictureBox
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(8, 7);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(37, 33);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
+            this.PricePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PricePictureBox.Image")));
+            this.PricePictureBox.Location = new System.Drawing.Point(12, 11);
+            this.PricePictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PricePictureBox.Name = "PricePictureBox";
+            this.PricePictureBox.Size = new System.Drawing.Size(56, 52);
+            this.PricePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PricePictureBox.TabIndex = 4;
+            this.PricePictureBox.TabStop = false;
             // 
-            // label6
+            // PriceLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label6.Location = new System.Drawing.Point(429, 305);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 32);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Вартість";
+            this.PriceLabel.AutoSize = true;
+            this.PriceLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.PriceLabel.Location = new System.Drawing.Point(458, 729);
+            this.PriceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.Size = new System.Drawing.Size(195, 51);
+            this.PriceLabel.TabIndex = 23;
+            this.PriceLabel.Text = "Вартість";
             // 
-            // label4
+            // DriverLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label4.Location = new System.Drawing.Point(358, 142);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 32);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Новий Водій";
+            this.DriverLabel.AutoSize = true;
+            this.DriverLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DriverLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.DriverLabel.Location = new System.Drawing.Point(458, 358);
+            this.DriverLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DriverLabel.Name = "DriverLabel";
+            this.DriverLabel.Size = new System.Drawing.Size(140, 51);
+            this.DriverLabel.TabIndex = 22;
+            this.DriverLabel.Text = "Водій";
             // 
-            // textBox1
+            // OpeningTime
             // 
-            this.textBox1.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox1.Location = new System.Drawing.Point(55, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(71, 26);
-            this.textBox1.TabIndex = 5;
+            this.OpeningTime.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.OpeningTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.OpeningTime.Location = new System.Drawing.Point(82, 16);
+            this.OpeningTime.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.OpeningTime.Name = "OpeningTime";
+            this.OpeningTime.Size = new System.Drawing.Size(104, 38);
+            this.OpeningTime.TabIndex = 5;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.PriceLabel);
             this.panel2.Controls.Add(this.panel5);
-            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.DriverLabel);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.TimeLabel);
             this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.CloseButton);
+            this.panel2.Controls.Add(this.TurnButton);
+            this.panel2.Controls.Add(this.AddressLabel);
+            this.panel2.Controls.Add(this.WindowNameLabel);
             this.panel2.Controls.Add(this.panel9);
-            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.AddButton);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(885, 486);
+            this.panel2.Size = new System.Drawing.Size(1328, 950);
             this.panel2.TabIndex = 22;
             this.panel2.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDoubleClick);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
@@ -314,212 +332,219 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(390, 241);
+            this.panel1.Controls.Add(this.OpeningTime);
+            this.panel1.Controls.Add(this.OpeningTimePictureBox);
+            this.panel1.Location = new System.Drawing.Point(467, 557);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(147, 46);
+            this.panel1.Size = new System.Drawing.Size(220, 72);
             this.panel1.TabIndex = 19;
             // 
-            // pictureBox1
+            // OpeningTimePictureBox
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.OpeningTimePictureBox.Image = ((System.Drawing.Image)(resources.GetObject("OpeningTimePictureBox.Image")));
+            this.OpeningTimePictureBox.Location = new System.Drawing.Point(18, 16);
+            this.OpeningTimePictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.OpeningTimePictureBox.Name = "OpeningTimePictureBox";
+            this.OpeningTimePictureBox.Size = new System.Drawing.Size(40, 42);
+            this.OpeningTimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.OpeningTimePictureBox.TabIndex = 4;
+            this.OpeningTimePictureBox.TabStop = false;
             // 
-            // button1
+            // CloseButton
             // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button1.Location = new System.Drawing.Point(843, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 40);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.CloseButton.Location = new System.Drawing.Point(1264, 0);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(60, 62);
+            this.CloseButton.TabIndex = 17;
+            this.CloseButton.Text = "X";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
-            // button2
+            // TurnButton
             // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button2.Location = new System.Drawing.Point(800, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.TurnButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TurnButton.FlatAppearance.BorderSize = 0;
+            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.TurnButton.Location = new System.Drawing.Point(1200, 0);
+            this.TurnButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(60, 62);
+            this.TurnButton.TabIndex = 18;
+            this.TurnButton.Text = "-";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
-            // label5
+            // AddressLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label5.Location = new System.Drawing.Point(455, 352);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(225, 32);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Кінець маршуту";
+            this.AddressLabel.AutoSize = true;
+            this.AddressLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.AddressLabel.Location = new System.Drawing.Point(458, 133);
+            this.AddressLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AddressLabel.Name = "AddressLabel";
+            this.AddressLabel.Size = new System.Drawing.Size(589, 51);
+            this.AddressLabel.TabIndex = 12;
+            this.AddressLabel.Text = "Початок та кінець маршуту";
             // 
-            // label2
+            // WindowNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label2.Location = new System.Drawing.Point(455, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 32);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Початок маршуту";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label12.Location = new System.Drawing.Point(329, 15);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(496, 32);
-            this.label12.TabIndex = 3;
-            this.label12.Text = "Додавання завершеного замовлення";
+            this.WindowNameLabel.AutoSize = true;
+            this.WindowNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WindowNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.WindowNameLabel.Location = new System.Drawing.Point(458, 58);
+            this.WindowNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WindowNameLabel.Name = "WindowNameLabel";
+            this.WindowNameLabel.Size = new System.Drawing.Size(781, 51);
+            this.WindowNameLabel.TabIndex = 3;
+            this.WindowNameLabel.Text = "Додавання завершеного замовлення";
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.SystemColors.Control;
-            this.panel9.Controls.Add(this.pictureBox9);
-            this.panel9.Controls.Add(this.textBox5);
-            this.panel9.Location = new System.Drawing.Point(358, 384);
+            this.panel9.Controls.Add(this.FinalAddressPictureBox);
+            this.panel9.Controls.Add(this.FinalAddress);
+            this.panel9.Location = new System.Drawing.Point(467, 271);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(450, 46);
+            this.panel9.Size = new System.Drawing.Size(675, 72);
             this.panel9.TabIndex = 5;
             // 
-            // pictureBox9
+            // FinalAddressPictureBox
             // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(15, 12);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 25);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
+            this.FinalAddressPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("FinalAddressPictureBox.Image")));
+            this.FinalAddressPictureBox.Location = new System.Drawing.Point(22, 19);
+            this.FinalAddressPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FinalAddressPictureBox.Name = "FinalAddressPictureBox";
+            this.FinalAddressPictureBox.Size = new System.Drawing.Size(36, 39);
+            this.FinalAddressPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.FinalAddressPictureBox.TabIndex = 6;
+            this.FinalAddressPictureBox.TabStop = false;
             // 
-            // textBox5
+            // FinalAddress
             // 
-            this.textBox5.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox5.Location = new System.Drawing.Point(55, 12);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(370, 26);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.UseSystemPasswordChar = true;
+            this.FinalAddress.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FinalAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.FinalAddress.Location = new System.Drawing.Point(82, 19);
+            this.FinalAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.FinalAddress.Name = "FinalAddress";
+            this.FinalAddress.Size = new System.Drawing.Size(553, 38);
+            this.FinalAddress.TabIndex = 5;
+            this.FinalAddress.UseSystemPasswordChar = true;
             // 
-            // button7
+            // AddButton
             // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(506, 436);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(154, 40);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Змінити";
-            this.button7.UseVisualStyleBackColor = false;
+            this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddButton.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.AddButton.ForeColor = System.Drawing.Color.White;
+            this.AddButton.Location = new System.Drawing.Point(771, 874);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(231, 62);
+            this.AddButton.TabIndex = 6;
+            this.AddButton.Text = "Додати";
+            this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.SystemColors.Control;
-            this.panel7.Controls.Add(this.textBox4);
-            this.panel7.Controls.Add(this.pictureBox8);
-            this.panel7.Location = new System.Drawing.Point(358, 82);
+            this.panel7.Controls.Add(this.StartingAddress);
+            this.panel7.Controls.Add(this.StartingAddressPictureBox);
+            this.panel7.Location = new System.Drawing.Point(467, 189);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(450, 46);
+            this.panel7.Size = new System.Drawing.Size(675, 72);
             this.panel7.TabIndex = 6;
             // 
-            // textBox4
+            // StartingAddress
             // 
-            this.textBox4.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox4.Location = new System.Drawing.Point(55, 10);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(370, 26);
-            this.textBox4.TabIndex = 5;
+            this.StartingAddress.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartingAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.StartingAddress.Location = new System.Drawing.Point(82, 16);
+            this.StartingAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.StartingAddress.Name = "StartingAddress";
+            this.StartingAddress.Size = new System.Drawing.Size(553, 38);
+            this.StartingAddress.TabIndex = 5;
             // 
-            // pictureBox8
+            // StartingAddressPictureBox
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(12, 10);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
+            this.StartingAddressPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("StartingAddressPictureBox.Image")));
+            this.StartingAddressPictureBox.Location = new System.Drawing.Point(18, 16);
+            this.StartingAddressPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.StartingAddressPictureBox.Name = "StartingAddressPictureBox";
+            this.StartingAddressPictureBox.Size = new System.Drawing.Size(40, 42);
+            this.StartingAddressPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.StartingAddressPictureBox.TabIndex = 4;
+            this.StartingAddressPictureBox.TabStop = false;
             // 
             // panel8
             // 
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(885, 486);
+            this.panel8.Size = new System.Drawing.Size(1328, 950);
             this.panel8.TabIndex = 21;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(15, 11);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 17);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 25);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
             // AddCompletedOrderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 486);
-            this.Controls.Add(this.panel10);
+            this.ClientSize = new System.Drawing.Size(1328, 950);
+            this.Controls.Add(this.LeftPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AddCompletedOrderForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddCompletedOrderForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ClosingTimePictureBox)).EndInit();
+            this.LeftPanel.ResumeLayout(false);
+            this.LeftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
+            this.UpperPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DriverPictureBox)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PricePictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.OpeningTimePictureBox)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FinalAddressPictureBox)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StartingAddressPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -527,41 +552,40 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label TimeLabel;
+        private System.Windows.Forms.TextBox ClosingTime;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel LeftPanel;
+        private System.Windows.Forms.Label TaxiNameLabel;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
+        private System.Windows.Forms.Panel UpperPanel;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox TaxiDriver;
+        private System.Windows.Forms.PictureBox DriverPictureBox;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Price;
+        private System.Windows.Forms.PictureBox PricePictureBox;
+        private System.Windows.Forms.Label PriceLabel;
+        private System.Windows.Forms.Label DriverLabel;
+        private System.Windows.Forms.TextBox OpeningTime;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox OpeningTimePictureBox;
+        private System.Windows.Forms.Button CloseButton;
+        private System.Windows.Forms.Button TurnButton;
+        private System.Windows.Forms.Label AddressLabel;
+        private System.Windows.Forms.Label WindowNameLabel;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.PictureBox FinalAddressPictureBox;
+        private System.Windows.Forms.TextBox FinalAddress;
+        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.TextBox StartingAddress;
+        private System.Windows.Forms.PictureBox StartingAddressPictureBox;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox ClosingTimePictureBox;
     }
 }

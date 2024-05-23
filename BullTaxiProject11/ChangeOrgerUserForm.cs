@@ -1,10 +1,13 @@
-﻿using System;
+﻿using MainFormBullTaxi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,84 +15,62 @@ namespace BullTaxiProject11
 {
     public partial class ChangeOrgerUserForm : Form
     {
-        private const string PlaceholderText = "Ім'я";
-        private const string PlaceholderText1 = "Прізвище";
-        private const string PlaceholderText2 = "По батькові";
         public ChangeOrgerUserForm()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
-            textBox6.Text = PlaceholderText;
-            textBox13.Text = PlaceholderText1;
-            textBox12.Text = PlaceholderText2;
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void TurnButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void textBox6_Leave(object sender, EventArgs e)
+        private void ChangeButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox6.Text))
+            if (Login.Text == "")
             {
-                textBox6.Text = PlaceholderText;
-                textBox6.ForeColor = Color.Gray;
+                MessageBox.Show("Введіть логін.");
             }
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_Enter(object sender, EventArgs e)
-        {
-            if (textBox6.Text == PlaceholderText)
+            else
             {
-                textBox6.Text = "";
-                textBox6.ForeColor = Color.Black;
-            }
-        }
+                Uri uri = new Uri("http://127.0.0.1:8000/user_change_information/");
 
-        private void textBox13_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox13.Text))
-            {
-                textBox13.Text = PlaceholderText1;
-                textBox13.ForeColor = Color.Gray;
-            }
-        }
+                Dictionary<string, string> parameters = new Dictionary<string, string>()
+                {
+                    {"username", Login.Text},
+                    {"new username", NewLogin.Text},
+                    {"new password", NewPassword.Text},
+                    {"new status", NewStatus.Text},
+                    {"new first name", NewFirstName.Text},
+                    {"new patronymic", NewPatronymic.Text},
+                    {"new last name", NewLastName.Text},
+                    {"new sex", NewSex.Text},
+                    {"new date of birth", NewBirthday.Text},
+                    {"new email", NewEmail.Text},
+                    {"new phone number", NewPhoneNumber.Text},
+                };
 
-        private void textBox13_Enter(object sender, EventArgs e)
-        {
-            if (textBox13.Text == PlaceholderText1)
-            {
-                textBox13.Text = "";
-                textBox13.ForeColor = Color.Black;
-            }
-        }
+                FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
 
-        private void textBox12_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(textBox12.Text))
-            {
-                textBox12.Text = PlaceholderText2;
-                textBox12.ForeColor = Color.Gray;
-            }
-        }
+                var answer = ProgramClient.Client.PostAsync(uri, form).Result;
+                Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
 
-        private void textBox12_Enter(object sender, EventArgs e)
-        {
-            if (textBox12.Text == PlaceholderText2)
-            {
-                textBox12.Text = "";
-                textBox12.ForeColor = Color.Black;
+                if (dict["Status"] == "Success")
+                {
+                    this.Hide();
+                    BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
+                    bullTaxiMainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show(dict["Message"]);
+                }
             }
         }
     }

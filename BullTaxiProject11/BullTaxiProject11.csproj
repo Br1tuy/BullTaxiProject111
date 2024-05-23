@@ -122,6 +122,7 @@
     <Compile Include="ChangingCompletedOrderForm.Designer.cs">
       <DependentUpon>ChangingCompletedOrderForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgramClient.cs" />
     <Compile Include="DeleteActiveOrderForm.cs">
       <SubType>Form</SubType>
     </Compile>

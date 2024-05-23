@@ -29,136 +29,146 @@
         private void InitializeComponent()
         {
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RegistrationButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ChangeButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ViewButton = new System.Windows.Forms.Button();
+            this.Table = new System.Windows.Forms.DataGridView();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Location = new System.Drawing.Point(12, 12);
+            this.panel5.Controls.Add(this.RegistrationButton);
+            this.panel5.Location = new System.Drawing.Point(18, 19);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(220, 70);
+            this.panel5.Size = new System.Drawing.Size(330, 109);
             this.panel5.TabIndex = 7;
             // 
-            // button1
+            // RegistrationButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 70);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Реєcтрація користувача";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.RegistrationButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.RegistrationButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegistrationButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.RegistrationButton.Location = new System.Drawing.Point(0, 0);
+            this.RegistrationButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RegistrationButton.Name = "RegistrationButton";
+            this.RegistrationButton.Size = new System.Drawing.Size(330, 109);
+            this.RegistrationButton.TabIndex = 0;
+            this.RegistrationButton.Text = "Реєcтрація користувача";
+            this.RegistrationButton.UseVisualStyleBackColor = false;
+            this.RegistrationButton.Click += new System.EventHandler(this.RegistrationButton_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(238, 12);
+            this.panel1.Controls.Add(this.ChangeButton);
+            this.panel1.Location = new System.Drawing.Point(357, 19);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 70);
+            this.panel1.Size = new System.Drawing.Size(330, 109);
             this.panel1.TabIndex = 7;
             // 
-            // button2
+            // ChangeButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 70);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Зміна даних користувача";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ChangeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ChangeButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ChangeButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ChangeButton.Location = new System.Drawing.Point(0, 0);
+            this.ChangeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChangeButton.Name = "ChangeButton";
+            this.ChangeButton.Size = new System.Drawing.Size(330, 109);
+            this.ChangeButton.TabIndex = 0;
+            this.ChangeButton.Text = "Зміна даних користувача";
+            this.ChangeButton.UseVisualStyleBackColor = false;
+            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Location = new System.Drawing.Point(464, 12);
+            this.panel2.Controls.Add(this.DeleteButton);
+            this.panel2.Location = new System.Drawing.Point(696, 19);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(220, 70);
+            this.panel2.Size = new System.Drawing.Size(330, 109);
             this.panel2.TabIndex = 7;
             // 
-            // button3
+            // DeleteButton
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 70);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Видалення користувача";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.DeleteButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.DeleteButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DeleteButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DeleteButton.Location = new System.Drawing.Point(0, 0);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(330, 109);
+            this.DeleteButton.TabIndex = 0;
+            this.DeleteButton.Text = "Видалення користувача";
+            this.DeleteButton.UseVisualStyleBackColor = false;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(690, 12);
+            this.panel3.Controls.Add(this.ViewButton);
+            this.panel3.Location = new System.Drawing.Point(1035, 19);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(220, 70);
+            this.panel3.Size = new System.Drawing.Size(330, 109);
             this.panel3.TabIndex = 7;
             // 
-            // button4
+            // ViewButton
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button4.Location = new System.Drawing.Point(0, 0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(220, 70);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Показ користувачів";
-            this.button4.UseVisualStyleBackColor = false;
+            this.ViewButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ViewButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ViewButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ViewButton.Location = new System.Drawing.Point(0, 0);
+            this.ViewButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ViewButton.Name = "ViewButton";
+            this.ViewButton.Size = new System.Drawing.Size(330, 109);
+            this.ViewButton.TabIndex = 0;
+            this.ViewButton.Text = "Показ користувачів";
+            this.ViewButton.UseVisualStyleBackColor = false;
+            this.ViewButton.Click += new System.EventHandler(this.ViewButton_Click);
             // 
-            // dataGridView1
+            // Table
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1900, 950);
-            this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Table.Location = new System.Drawing.Point(26, 195);
+            this.Table.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Table.Name = "Table";
+            this.Table.RowHeadersWidth = 51;
+            this.Table.RowTemplate.Height = 24;
+            this.Table.Size = new System.Drawing.Size(2850, 1484);
+            this.Table.TabIndex = 14;
             // 
             // FormUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1935, 1200);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(2902, 1758);
+            this.Controls.Add(this.Table);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormUser";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "FormUser";
-            this.Load += new System.EventHandler(this.FormUser_Load);
+            this.Load += new System.EventHandler(this.Table_Load);
             this.panel5.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -166,13 +176,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button RegistrationButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ChangeButton;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button ViewButton;
+        private System.Windows.Forms.DataGridView Table;
     }
 }

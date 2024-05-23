@@ -121,7 +121,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5QAAAOUBj+WbPAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGaSURBVFhH7ZQ/
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGaSURBVFhH7ZQ/
         TgJBGMVJNFRexVDR21BwAI+AR9ArwA3UKJ0mLI0oYOcmRoRCjBI32Rj/oDEUFBSUBF1nzLeZceaR/TZs
         LJCX/LrN+73dmWxqmTjxPC9957+Wen5/cO/3A8lR7fKHSuNqenZx03Zdb40eTz5CXgzF5oCQUzGCHk8+
         +pvPGlCptz7p8XjZdIJ0rjIu5ZzxQBAgTDkaIFnffYRk9p+n2fJ7e8MZ2seUq46LSKoz74CQ7EHfPiYh
@@ -132,7 +132,7 @@
         gg==
 </value>
   </data>
-  <data name="pictureBox10.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="LogoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAwAAAAMACAYAAACTgQCOAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         DAAACwwBP0AiyAAA/7JJREFUeF7snQd8FNX2x2dnSxq9pifbe0ujiwoqNqzYey/P+uwNffb6ns/2sNf3

@@ -30,48 +30,49 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChangeOrgerUserForm));
             this.panel9 = new System.Windows.Forms.Panel();
+            this.NewNumberLabel = new System.Windows.Forms.Label();
+            this.NewEmailLabel = new System.Windows.Forms.Label();
+            this.NewPasswordLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.NewLogin = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.NewPhoneNumber = new System.Windows.Forms.TextBox();
+            this.NewNameLabel = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.NewPatronymic = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.NewSexLabel = new System.Windows.Forms.Label();
+            this.NewBirthdayLabel = new System.Windows.Forms.Label();
+            this.NewLoginLabel = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.NewLastName = new System.Windows.Forms.TextBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.NewFirstName = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.NewPassword = new System.Windows.Forms.TextBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.NewBirthday = new System.Windows.Forms.TextBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.NewEmail = new System.Windows.Forms.TextBox();
+            this.TurnButton = new System.Windows.Forms.Button();
+            this.ChangeButton = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.NewSex = new System.Windows.Forms.TextBox();
+            this.WindowNameLabel = new System.Windows.Forms.Label();
+            this.CloseButton = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Login = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.TaxiNameLabel = new System.Windows.Forms.Label();
+            this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -91,7 +92,13 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.NewStatus = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.NewStatusLabel = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             this.panel17.SuspendLayout();
@@ -106,13 +113,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel15.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -123,180 +128,253 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel12.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panel9
             // 
             this.panel9.AutoSize = true;
+            this.panel9.Controls.Add(this.NewStatusLabel);
+            this.panel9.Controls.Add(this.panel7);
+            this.panel9.Controls.Add(this.NewNumberLabel);
+            this.panel9.Controls.Add(this.NewEmailLabel);
+            this.panel9.Controls.Add(this.NewPasswordLabel);
+            this.panel9.Controls.Add(this.panel1);
             this.panel9.Controls.Add(this.panel18);
-            this.panel9.Controls.Add(this.label11);
+            this.panel9.Controls.Add(this.NewNameLabel);
             this.panel9.Controls.Add(this.panel17);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.label8);
-            this.panel9.Controls.Add(this.label7);
+            this.panel9.Controls.Add(this.NewSexLabel);
+            this.panel9.Controls.Add(this.NewBirthdayLabel);
+            this.panel9.Controls.Add(this.NewLoginLabel);
             this.panel9.Controls.Add(this.panel16);
             this.panel9.Controls.Add(this.panel8);
             this.panel9.Controls.Add(this.panel14);
             this.panel9.Controls.Add(this.panel13);
             this.panel9.Controls.Add(this.panel15);
-            this.panel9.Controls.Add(this.panel7);
-            this.panel9.Controls.Add(this.button5);
-            this.panel9.Controls.Add(this.button6);
+            this.panel9.Controls.Add(this.TurnButton);
+            this.panel9.Controls.Add(this.ChangeButton);
             this.panel9.Controls.Add(this.panel10);
-            this.panel9.Controls.Add(this.label1);
-            this.panel9.Controls.Add(this.button7);
+            this.panel9.Controls.Add(this.WindowNameLabel);
+            this.panel9.Controls.Add(this.CloseButton);
             this.panel9.Controls.Add(this.panel11);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.panel9.Location = new System.Drawing.Point(300, 0);
+            this.panel9.Location = new System.Drawing.Point(454, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(503, 540);
+            this.panel9.Size = new System.Drawing.Size(1050, 1167);
             this.panel9.TabIndex = 10;
+            // 
+            // NewNumberLabel
+            // 
+            this.NewNumberLabel.AutoSize = true;
+            this.NewNumberLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewNumberLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewNumberLabel.Location = new System.Drawing.Point(6, 967);
+            this.NewNumberLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewNumberLabel.Name = "NewNumberLabel";
+            this.NewNumberLabel.Size = new System.Drawing.Size(504, 51);
+            this.NewNumberLabel.TabIndex = 20;
+            this.NewNumberLabel.Text = "Новий номер телефону";
+            // 
+            // NewEmailLabel
+            // 
+            this.NewEmailLabel.AutoSize = true;
+            this.NewEmailLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewEmailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewEmailLabel.Location = new System.Drawing.Point(6, 823);
+            this.NewEmailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewEmailLabel.Name = "NewEmailLabel";
+            this.NewEmailLabel.Size = new System.Drawing.Size(269, 51);
+            this.NewEmailLabel.TabIndex = 19;
+            this.NewEmailLabel.Text = "Нова пошта";
+            // 
+            // NewPasswordLabel
+            // 
+            this.NewPasswordLabel.AutoSize = true;
+            this.NewPasswordLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewPasswordLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewPasswordLabel.Location = new System.Drawing.Point(622, 129);
+            this.NewPasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewPasswordLabel.Name = "NewPasswordLabel";
+            this.NewPasswordLabel.Size = new System.Drawing.Size(315, 51);
+            this.NewPasswordLabel.TabIndex = 18;
+            this.NewPasswordLabel.Text = "Новий пароль";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.Controls.Add(this.NewLogin);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(15, 268);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(273, 70);
+            this.panel1.TabIndex = 17;
+            // 
+            // NewLogin
+            // 
+            this.NewLogin.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewLogin.Location = new System.Drawing.Point(78, 12);
+            this.NewLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewLogin.Name = "NewLogin";
+            this.NewLogin.Size = new System.Drawing.Size(174, 38);
+            this.NewLogin.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 38);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.SystemColors.Control;
             this.panel18.Controls.Add(this.pictureBox16);
-            this.panel18.Controls.Add(this.textBox14);
-            this.panel18.Location = new System.Drawing.Point(262, 398);
+            this.panel18.Controls.Add(this.NewPhoneNumber);
+            this.panel18.Location = new System.Drawing.Point(15, 1023);
+            this.panel18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(238, 45);
+            this.panel18.Size = new System.Drawing.Size(357, 70);
             this.panel18.TabIndex = 7;
             // 
             // pictureBox16
             // 
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(15, 8);
+            this.pictureBox16.Location = new System.Drawing.Point(22, 12);
+            this.pictureBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(28, 28);
+            this.pictureBox16.Size = new System.Drawing.Size(42, 44);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox16.TabIndex = 6;
             this.pictureBox16.TabStop = false;
             // 
-            // textBox14
+            // NewPhoneNumber
             // 
-            this.textBox14.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox14.Location = new System.Drawing.Point(55, 10);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(171, 26);
-            this.textBox14.TabIndex = 5;
-            this.textBox14.UseSystemPasswordChar = true;
+            this.NewPhoneNumber.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewPhoneNumber.Location = new System.Drawing.Point(82, 16);
+            this.NewPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewPhoneNumber.Name = "NewPhoneNumber";
+            this.NewPhoneNumber.Size = new System.Drawing.Size(254, 38);
+            this.NewPhoneNumber.TabIndex = 5;
+            this.NewPhoneNumber.UseSystemPasswordChar = true;
             // 
-            // label11
+            // NewNameLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label11.Location = new System.Drawing.Point(55, 302);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(424, 32);
-            this.label11.TabIndex = 16;
-            this.label11.Text = "ПІБ, гендер та номер телефону";
+            this.NewNameLabel.AutoSize = true;
+            this.NewNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewNameLabel.Location = new System.Drawing.Point(5, 361);
+            this.NewNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewNameLabel.Name = "NewNameLabel";
+            this.NewNameLabel.Size = new System.Drawing.Size(211, 51);
+            this.NewNameLabel.TabIndex = 16;
+            this.NewNameLabel.Text = "Нові ПІБ";
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.SystemColors.Control;
-            this.panel17.Controls.Add(this.textBox13);
+            this.panel17.Controls.Add(this.NewPatronymic);
             this.panel17.Controls.Add(this.pictureBox15);
-            this.panel17.Location = new System.Drawing.Point(14, 398);
+            this.panel17.Location = new System.Drawing.Point(15, 505);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(226, 45);
+            this.panel17.Size = new System.Drawing.Size(339, 70);
             this.panel17.TabIndex = 12;
             // 
-            // textBox13
+            // NewPatronymic
             // 
-            this.textBox13.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox13.Location = new System.Drawing.Point(52, 8);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(164, 26);
-            this.textBox13.TabIndex = 5;
-            this.textBox13.Enter += new System.EventHandler(this.textBox13_Enter);
-            this.textBox13.Leave += new System.EventHandler(this.textBox13_Leave);
+            this.NewPatronymic.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewPatronymic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewPatronymic.Location = new System.Drawing.Point(78, 12);
+            this.NewPatronymic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewPatronymic.Name = "NewPatronymic";
+            this.NewPatronymic.Size = new System.Drawing.Size(244, 38);
+            this.NewPatronymic.TabIndex = 5;
             // 
             // pictureBox15
             // 
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox15.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox15.Size = new System.Drawing.Size(54, 41);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 4;
             this.pictureBox15.TabStop = false;
             // 
-            // label10
+            // NewSexLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label10.Location = new System.Drawing.Point(8, 204);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(103, 32);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Пошта";
+            this.NewSexLabel.AutoSize = true;
+            this.NewSexLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewSexLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewSexLabel.Location = new System.Drawing.Point(622, 681);
+            this.NewSexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewSexLabel.Name = "NewSexLabel";
+            this.NewSexLabel.Size = new System.Drawing.Size(244, 51);
+            this.NewSexLabel.TabIndex = 15;
+            this.NewSexLabel.Text = "Нова стать";
             // 
-            // label9
+            // NewBirthdayLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label9.Location = new System.Drawing.Point(3, 117);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(249, 32);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "День народження";
+            this.NewBirthdayLabel.AutoSize = true;
+            this.NewBirthdayLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewBirthdayLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewBirthdayLabel.Location = new System.Drawing.Point(5, 681);
+            this.NewBirthdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewBirthdayLabel.Name = "NewBirthdayLabel";
+            this.NewBirthdayLabel.Size = new System.Drawing.Size(533, 51);
+            this.NewBirthdayLabel.TabIndex = 14;
+            this.NewBirthdayLabel.Text = "Новий день народження";
             // 
-            // label8
+            // NewLoginLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label8.Location = new System.Drawing.Point(320, 117);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 32);
-            this.label8.TabIndex = 13;
-            this.label8.Text = "ID";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label7.Location = new System.Drawing.Point(112, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(220, 32);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Логін та пароль";
+            this.NewLoginLabel.AutoSize = true;
+            this.NewLoginLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewLoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewLoginLabel.Location = new System.Drawing.Point(6, 129);
+            this.NewLoginLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewLoginLabel.Name = "NewLoginLabel";
+            this.NewLoginLabel.Size = new System.Drawing.Size(485, 51);
+            this.NewLoginLabel.TabIndex = 12;
+            this.NewLoginLabel.Text = "Старий та новий логін";
             // 
             // panel16
             // 
             this.panel16.BackColor = System.Drawing.SystemColors.Control;
-            this.panel16.Controls.Add(this.textBox12);
+            this.panel16.Controls.Add(this.NewLastName);
             this.panel16.Controls.Add(this.pictureBox14);
-            this.panel16.Location = new System.Drawing.Point(14, 450);
+            this.panel16.Location = new System.Drawing.Point(15, 586);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(226, 45);
+            this.panel16.Size = new System.Drawing.Size(339, 70);
             this.panel16.TabIndex = 11;
             // 
-            // textBox12
+            // NewLastName
             // 
-            this.textBox12.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox12.Location = new System.Drawing.Point(52, 8);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(164, 26);
-            this.textBox12.TabIndex = 5;
-            this.textBox12.Enter += new System.EventHandler(this.textBox12_Enter);
-            this.textBox12.Leave += new System.EventHandler(this.textBox12_Leave);
+            this.NewLastName.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewLastName.Location = new System.Drawing.Point(78, 12);
+            this.NewLastName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewLastName.Name = "NewLastName";
+            this.NewLastName.Size = new System.Drawing.Size(244, 38);
+            this.NewLastName.TabIndex = 5;
             // 
             // pictureBox14
             // 
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox14.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox14.Size = new System.Drawing.Size(54, 41);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox14.TabIndex = 4;
             this.pictureBox14.TabStop = false;
@@ -304,31 +382,31 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.SystemColors.Control;
-            this.panel8.Controls.Add(this.textBox6);
+            this.panel8.Controls.Add(this.NewFirstName);
             this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Location = new System.Drawing.Point(14, 345);
+            this.panel8.Location = new System.Drawing.Point(15, 422);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(226, 45);
+            this.panel8.Size = new System.Drawing.Size(339, 70);
             this.panel8.TabIndex = 11;
             // 
-            // textBox6
+            // NewFirstName
             // 
-            this.textBox6.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox6.Location = new System.Drawing.Point(52, 8);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(164, 26);
-            this.textBox6.TabIndex = 5;
-            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
-            this.textBox6.Enter += new System.EventHandler(this.textBox6_Enter);
-            this.textBox6.Leave += new System.EventHandler(this.textBox6_Leave);
+            this.NewFirstName.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewFirstName.Location = new System.Drawing.Point(78, 12);
+            this.NewFirstName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewFirstName.Name = "NewFirstName";
+            this.NewFirstName.Size = new System.Drawing.Size(244, 38);
+            this.NewFirstName.TabIndex = 5;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox7.Size = new System.Drawing.Size(54, 41);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 4;
             this.pictureBox7.TabStop = false;
@@ -336,28 +414,31 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.SystemColors.Control;
-            this.panel14.Controls.Add(this.textBox10);
+            this.panel14.Controls.Add(this.NewPassword);
             this.panel14.Controls.Add(this.pictureBox12);
-            this.panel14.Location = new System.Drawing.Point(233, 69);
+            this.panel14.Location = new System.Drawing.Point(631, 188);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(182, 45);
+            this.panel14.Size = new System.Drawing.Size(273, 70);
             this.panel14.TabIndex = 7;
             // 
-            // textBox10
+            // NewPassword
             // 
-            this.textBox10.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox10.Location = new System.Drawing.Point(52, 8);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(117, 26);
-            this.textBox10.TabIndex = 5;
+            this.NewPassword.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewPassword.Location = new System.Drawing.Point(78, 12);
+            this.NewPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewPassword.Name = "NewPassword";
+            this.NewPassword.Size = new System.Drawing.Size(174, 38);
+            this.NewPassword.TabIndex = 5;
             // 
             // pictureBox12
             // 
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox12.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox12.Size = new System.Drawing.Size(36, 38);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox12.TabIndex = 4;
             this.pictureBox12.TabStop = false;
@@ -365,28 +446,31 @@
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.SystemColors.Control;
-            this.panel13.Controls.Add(this.textBox9);
+            this.panel13.Controls.Add(this.NewBirthday);
             this.panel13.Controls.Add(this.pictureBox11);
-            this.panel13.Location = new System.Drawing.Point(9, 152);
+            this.panel13.Location = new System.Drawing.Point(15, 737);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(226, 45);
+            this.panel13.Size = new System.Drawing.Size(339, 70);
             this.panel13.TabIndex = 10;
             // 
-            // textBox9
+            // NewBirthday
             // 
-            this.textBox9.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox9.Location = new System.Drawing.Point(52, 8);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(164, 26);
-            this.textBox9.TabIndex = 5;
+            this.NewBirthday.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewBirthday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewBirthday.Location = new System.Drawing.Point(78, 12);
+            this.NewBirthday.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewBirthday.Name = "NewBirthday";
+            this.NewBirthday.Size = new System.Drawing.Size(244, 38);
+            this.NewBirthday.TabIndex = 5;
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox11.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox11.Size = new System.Drawing.Size(54, 41);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox11.TabIndex = 4;
             this.pictureBox11.TabStop = false;
@@ -395,205 +479,181 @@
             // 
             this.panel15.BackColor = System.Drawing.SystemColors.Control;
             this.panel15.Controls.Add(this.pictureBox13);
-            this.panel15.Controls.Add(this.textBox11);
-            this.panel15.Location = new System.Drawing.Point(9, 245);
+            this.panel15.Controls.Add(this.NewEmail);
+            this.panel15.Location = new System.Drawing.Point(15, 882);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(450, 45);
+            this.panel15.Size = new System.Drawing.Size(675, 70);
             this.panel15.TabIndex = 8;
             // 
             // pictureBox13
             // 
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(5, 12);
+            this.pictureBox13.Location = new System.Drawing.Point(8, 19);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(34, 26);
+            this.pictureBox13.Size = new System.Drawing.Size(51, 41);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox13.TabIndex = 6;
             this.pictureBox13.TabStop = false;
             // 
-            // textBox11
+            // NewEmail
             // 
-            this.textBox11.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox11.Location = new System.Drawing.Point(55, 12);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(370, 26);
-            this.textBox11.TabIndex = 5;
-            this.textBox11.UseSystemPasswordChar = true;
+            this.NewEmail.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewEmail.Location = new System.Drawing.Point(82, 19);
+            this.NewEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewEmail.Name = "NewEmail";
+            this.NewEmail.Size = new System.Drawing.Size(553, 38);
+            this.NewEmail.TabIndex = 5;
+            this.NewEmail.UseSystemPasswordChar = true;
             // 
-            // panel7
+            // TurnButton
             // 
-            this.panel7.BackColor = System.Drawing.SystemColors.Control;
-            this.panel7.Controls.Add(this.pictureBox5);
-            this.panel7.Controls.Add(this.textBox5);
-            this.panel7.Location = new System.Drawing.Point(271, 152);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(144, 45);
-            this.panel7.TabIndex = 7;
+            this.TurnButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TurnButton.FlatAppearance.BorderSize = 0;
+            this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.TurnButton.Location = new System.Drawing.Point(926, 5);
+            this.TurnButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TurnButton.Name = "TurnButton";
+            this.TurnButton.Size = new System.Drawing.Size(60, 62);
+            this.TurnButton.TabIndex = 11;
+            this.TurnButton.Text = "-";
+            this.TurnButton.UseVisualStyleBackColor = true;
+            this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
-            // pictureBox5
+            // ChangeButton
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(15, 12);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox5.Location = new System.Drawing.Point(55, 12);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(66, 26);
-            this.textBox5.TabIndex = 5;
-            this.textBox5.UseSystemPasswordChar = true;
-            // 
-            // button5
-            // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button5.Location = new System.Drawing.Point(432, -2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(40, 40);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(166, 505);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(170, 35);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Змінити";
-            this.button6.UseVisualStyleBackColor = false;
+            this.ChangeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ChangeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChangeButton.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ChangeButton.ForeColor = System.Drawing.Color.White;
+            this.ChangeButton.Location = new System.Drawing.Point(420, 1098);
+            this.ChangeButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ChangeButton.Name = "ChangeButton";
+            this.ChangeButton.Size = new System.Drawing.Size(255, 55);
+            this.ChangeButton.TabIndex = 6;
+            this.ChangeButton.Text = "Змінити";
+            this.ChangeButton.UseVisualStyleBackColor = false;
+            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click);
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.SystemColors.Control;
             this.panel10.Controls.Add(this.pictureBox8);
-            this.panel10.Controls.Add(this.textBox7);
-            this.panel10.Location = new System.Drawing.Point(262, 345);
+            this.panel10.Controls.Add(this.NewSex);
+            this.panel10.Location = new System.Drawing.Point(631, 737);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(238, 45);
+            this.panel10.Size = new System.Drawing.Size(357, 70);
             this.panel10.TabIndex = 5;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(11, 8);
+            this.pictureBox8.Location = new System.Drawing.Point(16, 12);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(34, 30);
+            this.pictureBox8.Size = new System.Drawing.Size(51, 47);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 6;
             this.pictureBox8.TabStop = false;
             // 
-            // textBox7
+            // NewSex
             // 
-            this.textBox7.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox7.Location = new System.Drawing.Point(55, 10);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(171, 26);
-            this.textBox7.TabIndex = 5;
-            this.textBox7.UseSystemPasswordChar = true;
+            this.NewSex.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewSex.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewSex.Location = new System.Drawing.Point(82, 16);
+            this.NewSex.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewSex.Name = "NewSex";
+            this.NewSex.Size = new System.Drawing.Size(254, 38);
+            this.NewSex.TabIndex = 5;
+            this.NewSex.UseSystemPasswordChar = true;
             // 
-            // label1
+            // WindowNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label1.Location = new System.Drawing.Point(48, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Зміна даних користувача";
+            this.WindowNameLabel.AutoSize = true;
+            this.WindowNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WindowNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.WindowNameLabel.Location = new System.Drawing.Point(8, 41);
+            this.WindowNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.WindowNameLabel.Name = "WindowNameLabel";
+            this.WindowNameLabel.Size = new System.Drawing.Size(542, 51);
+            this.WindowNameLabel.TabIndex = 3;
+            this.WindowNameLabel.Text = "Зміна даних користувача";
             // 
-            // button7
+            // CloseButton
             // 
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button7.Location = new System.Drawing.Point(469, -2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(40, 40);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "X";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.CloseButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CloseButton.FlatAppearance.BorderSize = 0;
+            this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.CloseButton.Location = new System.Drawing.Point(994, 5);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.CloseButton.Name = "CloseButton";
+            this.CloseButton.Size = new System.Drawing.Size(60, 62);
+            this.CloseButton.TabIndex = 3;
+            this.CloseButton.Text = "X";
+            this.CloseButton.UseVisualStyleBackColor = true;
+            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.SystemColors.Control;
-            this.panel11.Controls.Add(this.textBox8);
+            this.panel11.Controls.Add(this.Login);
             this.panel11.Controls.Add(this.pictureBox9);
-            this.panel11.Location = new System.Drawing.Point(6, 69);
+            this.panel11.Location = new System.Drawing.Point(15, 188);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(182, 45);
+            this.panel11.Size = new System.Drawing.Size(273, 70);
             this.panel11.TabIndex = 6;
             // 
-            // textBox8
+            // Login
             // 
-            this.textBox8.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox8.Location = new System.Drawing.Point(52, 8);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(117, 26);
-            this.textBox8.TabIndex = 5;
+            this.Login.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.Login.Location = new System.Drawing.Point(78, 12);
+            this.Login.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(174, 38);
+            this.Login.TabIndex = 5;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox9.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox9.Size = new System.Drawing.Size(36, 38);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 4;
             this.pictureBox9.TabStop = false;
             // 
-            // label4
+            // TaxiNameLabel
             // 
-            this.label4.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(49, 493);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(225, 34);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Develop by Br1tuy";
+            this.TaxiNameLabel.AutoSize = true;
+            this.TaxiNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaxiNameLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.TaxiNameLabel.Location = new System.Drawing.Point(140, 319);
+            this.TaxiNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TaxiNameLabel.Name = "TaxiNameLabel";
+            this.TaxiNameLabel.Size = new System.Drawing.Size(197, 51);
+            this.TaxiNameLabel.TabIndex = 2;
+            this.TaxiNameLabel.Text = "Bull Taxi";
             // 
-            // label6
+            // LogoPictureBox
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(93, 204);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 32);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Bull Taxi";
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(63, 26);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(180, 180);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 0;
-            this.pictureBox10.TabStop = false;
+            this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
+            this.LogoPictureBox.Location = new System.Drawing.Point(94, 41);
+            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.LogoPictureBox.Name = "LogoPictureBox";
+            this.LogoPictureBox.Size = new System.Drawing.Size(270, 281);
+            this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoPictureBox.TabIndex = 0;
+            this.LogoPictureBox.TabStop = false;
             // 
             // button2
             // 
@@ -602,9 +662,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.button2.Location = new System.Drawing.Point(316, 0);
+            this.button2.Location = new System.Drawing.Point(474, 0);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
+            this.button2.Size = new System.Drawing.Size(60, 62);
             this.button2.TabIndex = 11;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
@@ -615,9 +676,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(140, 460);
+            this.button1.Location = new System.Drawing.Point(210, 719);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 35);
+            this.button1.Size = new System.Drawing.Size(255, 55);
             this.button1.TabIndex = 6;
             this.button1.Text = "Зареєструвати";
             this.button1.UseVisualStyleBackColor = false;
@@ -630,9 +692,10 @@
             this.button3.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(362, 3);
+            this.button3.Location = new System.Drawing.Point(543, 5);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(35, 35);
+            this.button3.Size = new System.Drawing.Size(52, 55);
             this.button3.TabIndex = 12;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -649,9 +712,10 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.panel2.Location = new System.Drawing.Point(300, 0);
+            this.panel2.Location = new System.Drawing.Point(454, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(503, 540);
+            this.panel2.Size = new System.Drawing.Size(1050, 1167);
             this.panel2.TabIndex = 11;
             // 
             // panel6
@@ -659,26 +723,29 @@
             this.panel6.BackColor = System.Drawing.SystemColors.Control;
             this.panel6.Controls.Add(this.textBox4);
             this.panel6.Controls.Add(this.pictureBox3);
-            this.panel6.Location = new System.Drawing.Point(3, 242);
+            this.panel6.Location = new System.Drawing.Point(4, 378);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(450, 45);
+            this.panel6.Size = new System.Drawing.Size(675, 70);
             this.panel6.TabIndex = 7;
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox4.Location = new System.Drawing.Point(52, 8);
+            this.textBox4.Location = new System.Drawing.Point(78, 12);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(370, 26);
+            this.textBox4.Size = new System.Drawing.Size(553, 38);
             this.textBox4.TabIndex = 5;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(8, 8);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 26);
+            this.pictureBox3.Size = new System.Drawing.Size(54, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -688,17 +755,19 @@
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Controls.Add(this.textBox1);
-            this.panel5.Location = new System.Drawing.Point(1, 355);
+            this.panel5.Location = new System.Drawing.Point(2, 555);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(450, 45);
+            this.panel5.Size = new System.Drawing.Size(675, 70);
             this.panel5.TabIndex = 7;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 19);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -707,9 +776,10 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox1.Location = new System.Drawing.Point(55, 12);
+            this.textBox1.Location = new System.Drawing.Point(82, 19);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(370, 26);
+            this.textBox1.Size = new System.Drawing.Size(553, 38);
             this.textBox1.TabIndex = 5;
             this.textBox1.UseSystemPasswordChar = true;
             // 
@@ -718,17 +788,19 @@
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Controls.Add(this.pictureBox6);
             this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Location = new System.Drawing.Point(0, 304);
+            this.panel4.Location = new System.Drawing.Point(0, 475);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(450, 45);
+            this.panel4.Size = new System.Drawing.Size(675, 70);
             this.panel4.TabIndex = 5;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(15, 12);
+            this.pictureBox6.Location = new System.Drawing.Point(22, 19);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox6.Size = new System.Drawing.Size(36, 38);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
@@ -737,9 +809,10 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox2.Location = new System.Drawing.Point(55, 12);
+            this.textBox2.Location = new System.Drawing.Point(82, 19);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(370, 26);
+            this.textBox2.Size = new System.Drawing.Size(553, 38);
             this.textBox2.TabIndex = 5;
             this.textBox2.UseSystemPasswordChar = true;
             // 
@@ -748,9 +821,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.label3.Location = new System.Drawing.Point(12, 125);
+            this.label3.Location = new System.Drawing.Point(18, 195);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(420, 32);
+            this.label3.Size = new System.Drawing.Size(661, 51);
             this.label3.TabIndex = 3;
             this.label3.Text = "Реєстрація нового користувача";
             // 
@@ -761,9 +835,10 @@
             this.closebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closebtn.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.closebtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.closebtn.Location = new System.Drawing.Point(410, 0);
+            this.closebtn.Location = new System.Drawing.Point(615, 0);
+            this.closebtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closebtn.Name = "closebtn";
-            this.closebtn.Size = new System.Drawing.Size(40, 40);
+            this.closebtn.Size = new System.Drawing.Size(60, 62);
             this.closebtn.TabIndex = 3;
             this.closebtn.Text = "X";
             this.closebtn.UseVisualStyleBackColor = true;
@@ -773,26 +848,29 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Location = new System.Drawing.Point(2, 191);
+            this.panel3.Location = new System.Drawing.Point(3, 298);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(450, 45);
+            this.panel3.Size = new System.Drawing.Size(675, 70);
             this.panel3.TabIndex = 6;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.textBox3.Location = new System.Drawing.Point(52, 8);
+            this.textBox3.Location = new System.Drawing.Point(78, 12);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(370, 26);
+            this.textBox3.Size = new System.Drawing.Size(553, 38);
             this.textBox3.TabIndex = 5;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 10);
+            this.pictureBox4.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox4.Size = new System.Drawing.Size(36, 38);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 4;
             this.pictureBox4.TabStop = false;
@@ -800,29 +878,78 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.panel12.Controls.Add(this.label4);
-            this.panel12.Controls.Add(this.label6);
-            this.panel12.Controls.Add(this.pictureBox10);
+            this.panel12.Controls.Add(this.TaxiNameLabel);
+            this.panel12.Controls.Add(this.LogoPictureBox);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel12.Location = new System.Drawing.Point(0, 0);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(300, 540);
+            this.panel12.Size = new System.Drawing.Size(454, 1167);
             this.panel12.TabIndex = 8;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.SystemColors.Control;
+            this.panel7.Controls.Add(this.NewStatus);
+            this.panel7.Controls.Add(this.pictureBox5);
+            this.panel7.Location = new System.Drawing.Point(631, 422);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(273, 70);
+            this.panel7.TabIndex = 21;
+            // 
+            // NewStatus
+            // 
+            this.NewStatus.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.NewStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewStatus.Location = new System.Drawing.Point(78, 12);
+            this.NewStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.NewStatus.Name = "NewStatus";
+            this.NewStatus.Size = new System.Drawing.Size(174, 38);
+            this.NewStatus.TabIndex = 5;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(36, 38);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // NewStatusLabel
+            // 
+            this.NewStatusLabel.AutoSize = true;
+            this.NewStatusLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewStatusLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.NewStatusLabel.Location = new System.Drawing.Point(622, 361);
+            this.NewStatusLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NewStatusLabel.Name = "NewStatusLabel";
+            this.NewStatusLabel.Size = new System.Drawing.Size(296, 51);
+            this.NewStatusLabel.TabIndex = 22;
+            this.NewStatusLabel.Text = "Новий статус";
             // 
             // ChangeOrgerUserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 540);
+            this.ClientSize = new System.Drawing.Size(1504, 1167);
             this.ControlBox = false;
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel12);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ChangeOrgerUserForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangeOrgerUserForm";
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
@@ -844,16 +971,13 @@
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -870,6 +994,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -880,46 +1007,40 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox NewPhoneNumber;
+        private System.Windows.Forms.Label NewNameLabel;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox NewPatronymic;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label NewSexLabel;
+        private System.Windows.Forms.Label NewBirthdayLabel;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox NewLastName;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox NewFirstName;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox NewPassword;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox NewBirthday;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TextBox NewEmail;
+        private System.Windows.Forms.Button TurnButton;
+        private System.Windows.Forms.Button ChangeButton;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.TextBox NewSex;
+        private System.Windows.Forms.Label WindowNameLabel;
+        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Login;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label TaxiNameLabel;
+        private System.Windows.Forms.PictureBox LogoPictureBox;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
@@ -939,5 +1060,16 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox NewLogin;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label NewLoginLabel;
+        private System.Windows.Forms.Label NewPasswordLabel;
+        private System.Windows.Forms.Label NewNumberLabel;
+        private System.Windows.Forms.Label NewEmailLabel;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.TextBox NewStatus;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label NewStatusLabel;
     }
 }

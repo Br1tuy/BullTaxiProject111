@@ -6,7 +6,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,54 +20,64 @@ namespace BullTaxi
         {
             InitializeComponent();
         }
+
         const int TABLE_ROW_COUNT = 10;
         const int TABLE_COLUMN_COUNT = 10;
-        private void FormUser_Load(object sender, EventArgs e)
+        Dictionary<string, string> dict;
+        Dictionary<string, Dictionary<string, string>> users;
+
+        private void Table_Load(object sender, EventArgs e)
         {
             
                 for (int c = 0; c < TABLE_COLUMN_COUNT; c++)
                 {
-                    dataGridView1.Columns.Add(c.ToString(), c.ToString());
+                    Table.Columns.Add(c.ToString(), c.ToString());
 
                 }
                 for (int r = 0; r < TABLE_ROW_COUNT - 1; r++)
                 {
-                    dataGridView1.Rows.Add();
+                    Table.Rows.Add();
                 }
             
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void RegistrationButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
             AddNewUserForm AddNewUserForm = new AddNewUserForm();
-            
-            AddNewUserForm.Show();
+          
+            AddNewUserForm.ShowDialog();
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ChangeButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             ChangeOrgerUserForm changeOrgerUserForm = new ChangeOrgerUserForm();
-            changeOrgerUserForm.Show();
+
+            changeOrgerUserForm.ShowDialog();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DeleteButton_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
             DeleteUserForm deleteUserForm = new DeleteUserForm();
-            deleteUserForm.Show();
+
+            deleteUserForm.ShowDialog();
+        }
+
+        private void ViewButton_Click(object sender, EventArgs e)
+        {
+            Uri uri = new Uri("http://127.0.0.1:8000/users_view/");
+
+            var answer = ProgramClient.Client.GetAsync(uri).Result;
+
+            try
+            {
+                users = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(answer.Content.ReadAsStringAsync().Result);
+            }
+            catch
+            {
+                dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
+                MessageBox.Show(dict["Message"]);
+            }
         }
     }
 }

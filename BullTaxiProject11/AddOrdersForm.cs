@@ -1,10 +1,14 @@
-﻿using System;
+﻿using MainFormBullTaxi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,33 +19,20 @@ namespace BullTaxiProject11
         bool dragging = false;
         Point dragCursorPoint;
         Point dragFormPoint;
+
         public AddOrders()
         {
             InitializeComponent();
-            
-
             this.AutoSize = true;
             this.StartPosition = FormStartPosition.CenterScreen;
-         
-
         }
 
-        private void AddOrders_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void TurnButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
@@ -77,19 +68,47 @@ namespace BullTaxiProject11
             }
         }
 
-        private void panel6_Paint(object sender, PaintEventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
+            if (StartingAddress.Text == "")
+            {
+                MessageBox.Show("Введіть початкову адресу.");
+            }
+            else if (FinalAddress.Text == "")
+            {
+                MessageBox.Show("Введіть кінцеву адресу.");
+            }
+            else if (OpeningTime.Text == "")
+            {
+                MessageBox.Show("Введіть час відкриття замовлення.");
+            }
+            else
+            {
+                Uri uri = new Uri("http://127.0.0.1:8000/active_orders_add/");
 
-        }
+                Dictionary<string, string> parameters = new Dictionary<string, string>()
+                {
+                    {"opening time", OpeningTime.Text},
+                    {"starting address", StartingAddress.Text},
+                    {"final address", FinalAddress.Text},
+                };
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+                FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
 
-        }
+                var answer = ProgramClient.Client.PostAsync(uri, form).Result;
+                Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+                if (dict["Status"] == "Success")
+                {
+                    this.Hide();
+                    BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
+                    bullTaxiMainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show(dict["Message"]);
+                }
+            }
         }
     }
 }

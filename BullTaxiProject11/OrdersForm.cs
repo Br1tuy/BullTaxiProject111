@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -15,91 +16,63 @@ namespace BullTaxiProject11
         DateTime date;
         Timer timer;
         bool isTimerRunning;
+        Dictionary<string, string> dict;
+        Dictionary<string, Dictionary<string, string>> active_orders;
+        Dictionary<string, Dictionary<string, string>> completed_orders;
+
         public OrdersForm()
         {
             InitializeComponent();
-            timer = new Timer();
-            timer.Interval = 10; 
-            timer.Tick += new EventHandler(timerTick);
-            this.StartPosition = FormStartPosition.CenterScreen;
-
-
         }
         const int TABLE_ROW_COUNT = 10;
         const int TABLE_COLUMN_COUNT = 10;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void AddActiveOrderButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             AddOrders AddOrdersForm = new AddOrders();
 
-            AddOrdersForm.Show();
+            AddOrdersForm.ShowDialog();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ChangeActiveOrderButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             ChangeActiveOrderForm changeActiveOrderForm = new ChangeActiveOrderForm();
 
-            changeActiveOrderForm.Show();
+            changeActiveOrderForm.ShowDialog();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void ChangeCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             ChangingCompletedOrderForm changingCompletedOrderForm = new ChangingCompletedOrderForm();
 
-            changingCompletedOrderForm.Show();
+            changingCompletedOrderForm.ShowDialog();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void ViewCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            date = DateTime.Now;
-            timer.Interval = 10; // Set the interval here if it's constant
-            timer.Tick += new EventHandler(timerTick); // Correct event handler assignment
-            
-        }
+            Uri uri = new Uri("http://127.0.0.1:8000/completed_orders_view/");
 
-        private void timerTick(object sender, EventArgs e)
-        {
-            long tick = DateTime.Now.Ticks - date.Ticks;
-            DateTime stopWatch = new DateTime();
-            stopWatch = stopWatch.AddTicks(tick);
-            label1.Text = String.Format("{0:HH:mm:ss:ff}", stopWatch);
-        }
+            var answer = ProgramClient.Client.GetAsync(uri).Result;
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            if (!isTimerRunning)
+            try
             {
-                timer.Start();
-                isTimerRunning = true;
+                completed_orders = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(answer.Content.ReadAsStringAsync().Result);
             }
-            else
+            catch
             {
-                timer.Stop();
-                isTimerRunning = false;
-            }   
+                dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
+                MessageBox.Show(dict["Message"]);
+            }
         }
 
-        private void button10_Click(object sender, EventArgs e)
+        private void AddCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            AddCompletedOrderForm addCompletedOrderForm = new AddCompletedOrderForm();
+
+            addCompletedOrderForm.ShowDialog();
         }
 
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            ChangingCompletedOrderForm changingCompletedOrderForm = new ChangingCompletedOrderForm();
-            changingCompletedOrderForm.Show();
-        }
-
-        private void OrdersForm_Load(object sender, EventArgs e)
+        private void Table_Load(object sender, EventArgs e)
         {
             for(int c =0; c < TABLE_COLUMN_COUNT; c++)
             {
@@ -117,18 +90,35 @@ namespace BullTaxiProject11
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void DeleteActiveOrderButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             DeleteActiveOrderForm deleteActiveOrderForm = new DeleteActiveOrderForm();
-            deleteActiveOrderForm.Show();
+
+            deleteActiveOrderForm.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void DeleteCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            this.Close();
             DeleteCompletedOrderForm deleteCompletedOrder = new DeleteCompletedOrderForm();
-            deleteCompletedOrder.Show();
+
+            deleteCompletedOrder.ShowDialog();
+        }
+
+        private void ViewActiveOrderButton_Click(object sender, EventArgs e)
+        {
+            Uri uri = new Uri("http://127.0.0.1:8000/active_orders_view/");
+
+            var answer = ProgramClient.Client.GetAsync(uri).Result;
+
+            try
+            {
+                active_orders = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(answer.Content.ReadAsStringAsync().Result);
+            }
+            catch
+            {
+                dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
+                MessageBox.Show(dict["Message"]);
+            }
         }
     }
 }

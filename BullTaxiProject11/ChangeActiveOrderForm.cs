@@ -1,10 +1,14 @@
-﻿using System;
+﻿using MainFormBullTaxi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -24,12 +28,12 @@ namespace BullTaxiProject11
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void TurnButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -42,11 +46,6 @@ namespace BullTaxiProject11
                 dragCursorPoint = Cursor.Position;
                 dragFormPoint = this.Location;
             }
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void panel2_MouseMove(object sender, MouseEventArgs e)
@@ -71,6 +70,42 @@ namespace BullTaxiProject11
             dragging = true;
             dragCursorPoint = Cursor.Position;
             dragFormPoint = this.Location;
+        }
+
+        private void ChangeButton_Click(object sender, EventArgs e)
+        {
+            if (ID.Text == "")
+            {
+                MessageBox.Show("Введіть id.");
+            }
+            else
+            {
+                Uri uri = new Uri("http://127.0.0.1:8000/active_orders_change_information/");
+
+                Dictionary<string, string> parameters = new Dictionary<string, string>()
+                {
+                    {"id", ID.Text},
+                    {"new opening time", NewOpeningTime.Text},
+                    {"new starting address", NewStartingAddress.Text},
+                    {"new final address", NewFinalAddress.Text},
+                };
+
+                FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
+
+                var answer = ProgramClient.Client.PostAsync(uri, form).Result;
+                Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
+
+                if (dict["Status"] == "Success")
+                {
+                    this.Hide();
+                    BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
+                    bullTaxiMainForm.Show();
+                }
+                else
+                {
+                    MessageBox.Show(dict["Message"]);
+                }
+            }
         }
     }
 }
