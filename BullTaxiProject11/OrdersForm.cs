@@ -13,9 +13,6 @@ namespace BullTaxiProject11
 {
     public partial class OrdersForm : Form
     {
-        DateTime date;
-        Timer timer;
-        bool isTimerRunning;
         Dictionary<string, string> dict;
         Dictionary<string, Dictionary<string, string>> active_orders;
         Dictionary<string, Dictionary<string, string>> completed_orders;
@@ -24,8 +21,10 @@ namespace BullTaxiProject11
         {
             InitializeComponent();
         }
-        const int TABLE_ROW_COUNT = 10;
-        const int TABLE_COLUMN_COUNT = 10;
+        string[] table_active_columns = new string[] { "Id", "OpeningTime", "StartingAddress", "FinalAddress" };
+        string[] table_active_headers = new string[] { "Id", "Час відкриття", "Початкова адреса", "Кінцева адреса" };
+        string[] table_completed_columns = new string[] { "Id", "Driver", "OpeningTime", "ClosingTime", "StartingAddress", "FinalAddress", "Price" };
+        string[] table_completed_headers = new string[] { "Id", "Водій", "Час відкриття", "Час закриття", "Початкова адреса", "Кінцева адреса", "Ціна" };
 
         private void AddActiveOrderButton_Click(object sender, EventArgs e)
         {
@@ -57,6 +56,25 @@ namespace BullTaxiProject11
             try
             {
                 completed_orders = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(answer.Content.ReadAsStringAsync().Result);
+
+                Table.Rows.Clear();
+                Table.Columns.Clear();
+
+                for (int c = 0; c < 7; c++)
+                {
+                    Table.Columns.Add(table_completed_columns[c], table_completed_headers[c]);
+                }
+
+
+                if (active_orders != null)
+                {
+                    foreach (var items in active_orders)
+                    {
+                        Table.Invoke(new MethodInvoker(() => Table.Rows.Add(items.Key, items.Value["taxi driver"], items.Value["opening time"], items.Value["closing time"], items.Value["starting address"], items.Value["final address"], items.Value["price"])));
+                    }
+
+                    Table.Refresh();
+                }
             }
             catch
             {
@@ -74,14 +92,9 @@ namespace BullTaxiProject11
 
         private void Table_Load(object sender, EventArgs e)
         {
-            for(int c =0; c < TABLE_COLUMN_COUNT; c++)
+            for (int c = 0; c < 4; c++)
             {
-                dataGridView1.Columns.Add(c.ToString(), c.ToString ());
-
-            }
-            for(int r = 0; r < TABLE_ROW_COUNT - 1; r++)
-            {
-                dataGridView1.Rows.Add();
+                Table.Columns.Add(table_active_columns[c], table_active_headers[c]);
             }
         }
 
@@ -113,6 +126,25 @@ namespace BullTaxiProject11
             try
             {
                 active_orders = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(answer.Content.ReadAsStringAsync().Result);
+
+                Table.Rows.Clear();
+                Table.Columns.Clear();
+
+                for (int c = 0; c < 4; c++)
+                {
+                    Table.Columns.Add(table_active_columns[c], table_active_headers[c]);
+                }
+
+                
+                if (active_orders != null)
+                {
+                    foreach (var items in active_orders)
+                    {
+                        Table.Invoke(new MethodInvoker(() => Table.Rows.Add(items.Key, items.Value["opening time"], items.Value["starting address"], items.Value["final address"])));
+                    }
+
+                    Table.Refresh();
+                }
             }
             catch
             {

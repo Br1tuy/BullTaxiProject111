@@ -21,24 +21,17 @@ namespace BullTaxi
             InitializeComponent();
         }
 
-        const int TABLE_ROW_COUNT = 10;
-        const int TABLE_COLUMN_COUNT = 10;
+        string[] table_columns = new string[] { "Login", "Status", "FirstName", "Patronymic", "LastName", "Sex", "Birthday", "Email", "PhoneNumber"};
+        string[] table_headers = new string[] { "Логін", "Статус", "Ім'я", "По батькові", "Фамілія", "Стать", "День народження", "Пошта", "Номер телефону"};
         Dictionary<string, string> dict;
         Dictionary<string, Dictionary<string, string>> users;
 
         private void Table_Load(object sender, EventArgs e)
         {
-            
-                for (int c = 0; c < TABLE_COLUMN_COUNT; c++)
-                {
-                    Table.Columns.Add(c.ToString(), c.ToString());
-
-                }
-                for (int r = 0; r < TABLE_ROW_COUNT - 1; r++)
-                {
-                    Table.Rows.Add();
-                }
-            
+            for (int c = 0; c < 9; c++)
+            {
+                Table.Columns.Add(table_columns[c], table_headers[c]);
+            }
         }
 
         private void RegistrationButton_Click(object sender, EventArgs e)
@@ -72,6 +65,18 @@ namespace BullTaxi
             try
             {
                 users = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, string>>>(answer.Content.ReadAsStringAsync().Result);
+
+                Table.Rows.Clear();
+
+                if (users != null)
+                {
+                    foreach (var items in users)
+                    {
+                        Table.Invoke(new MethodInvoker(() => Table.Rows.Add(items.Value["username"], items.Value["status"], items.Value["first name"], items.Value["patronymic"], items.Value["last name"], items.Value["sex"], items.Value["date of birth"], items.Value["email"], items.Value["phone number"])));
+                    }
+
+                    Table.Refresh();
+                }
             }
             catch
             {
