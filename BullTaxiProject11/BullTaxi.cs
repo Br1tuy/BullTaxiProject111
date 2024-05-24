@@ -52,7 +52,6 @@ namespace MainFormBullTaxi
 
         private void EntryButton_Click(object sender, EventArgs e)
         {
-            /*
              Uri uri = new Uri("http://127.0.0.1:8000/login/");
 
              if (Login.Text == "") MessageBox.Show("Введіть логін.");
@@ -71,7 +70,15 @@ namespace MainFormBullTaxi
                  Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
                  var csrfToken = ProgramClient.Cookies.GetCookies(uri).Cast<System.Net.Cookie>().FirstOrDefault(c => c.Name == "csrftoken")?.Value;
 
-                 ProgramClient.Client.DefaultRequestHeaders.Add("X-Csrftoken", csrfToken);
+                 if (ProgramClient.Client.DefaultRequestHeaders.Contains("X-Csrftoken"))
+                 {
+                    ProgramClient.Client.DefaultRequestHeaders.Remove("X-Csrftoken");
+                    ProgramClient.Client.DefaultRequestHeaders.Add("X-Csrftoken", csrfToken);
+                 }
+                 else
+                 {
+                    ProgramClient.Client.DefaultRequestHeaders.Add("X-Csrftoken", csrfToken);
+                 } 
 
                  if (dict["Status"] == "Success")
                  {
@@ -83,29 +90,22 @@ namespace MainFormBullTaxi
                      }
                      else if (dict["User group"] == "Operator")
                      {
-
+                        this.Hide();
+                        MainOperatorForm mainOperatorForm = new MainOperatorForm();
+                        mainOperatorForm.Show();
                      }
                      else if (dict["User group"] == "Spectator")
                      {
-
-                     }
+                        this.Hide();
+                        ViewerForm viewerForm = new ViewerForm();
+                        viewerForm.Show();
+                    }
                  }
                  else
                  {
                      MessageBox.Show(dict["Message"]);
                  }
-            
-
              }
-            
-            this.Hide();
-            BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
-            bullTaxiMainForm.Show();
-            */
-            this.Hide();
-            MainOperatorForm mainOperatorForm = new MainOperatorForm();
-            mainOperatorForm.Show();
-            
         }
 
         private void EmailLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

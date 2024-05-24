@@ -26,11 +26,6 @@ namespace BullTaxiProject11
             this.Close();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void TurnButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;

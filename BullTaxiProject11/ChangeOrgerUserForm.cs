@@ -46,7 +46,7 @@ namespace BullTaxiProject11
                     {"username", Login.Text},
                     {"new username", NewLogin.Text},
                     {"new password", NewPassword.Text},
-                    {"new status", NewStatus.Text},
+                    {"new status", NewStatusBox.Text},
                     {"new first name", NewFirstName.Text},
                     {"new patronymic", NewPatronymic.Text},
                     {"new last name", NewLastName.Text},
@@ -63,9 +63,7 @@ namespace BullTaxiProject11
 
                 if (dict["Status"] == "Success")
                 {
-                    this.Hide();
-                    BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
-                    bullTaxiMainForm.Show();
+                    this.Close();
                 }
                 else
                 {

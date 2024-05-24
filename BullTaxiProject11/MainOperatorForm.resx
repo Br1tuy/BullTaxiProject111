@@ -3241,28 +3241,6 @@
         cZkq/AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="ExitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOESURBVFhHtVdL
-        axRBEO7srO/XRVFRfOtJPHjwpiIo+AP0oP6ZoAiGaHZmTFYjidGAHjx48uZFL8ZHjAgGVHwgkTUS4yHu
-        Tvcm0fGrnt51UtMz2d3Ego/pR722u6q6VjRMneEqxw9O5bygx/Hlk5wnx4EyUMm58rvjySGMi44bnBY9
-        4WojtQhUULug+BowBYQNopzz5Q3hq91GSwvkh8ug5CKUVZnyZjCd81SHGAiXG60N0lW5E4IjFoUtga5H
-        9JQ3Ge3zkFfdD6ESV7IIGBNu9YCxkkL6l1uNB8DHFFQAzp+GMVGobDbWGNGd247dVZdEb7jEcCXJLW8E
-        34+EXAr0ddhiwgQcEwhei/Ywh/EtwPbr35IslD7GmMlmwJUXtNE6Ralmi/ZBOjLLeg1VEocDjyx7WSjP
-        uQosUJ7bGG8KP9hqxjN5Xx0nZ+tAzIh7oYM9Og0umw1XXo+so8JhIa3IxB34Suz4tgO9NeDXP8WXyzWC
-        CuJurYjKq5WBYHNg1MxtGBee2otvH/Antm4FbJ8hhUW+EUOzDowSD11L3lUnMP/M9jn6cAL6YbFtElpy
-        gIJS+PIo0nclpTHWfzM+DceVL0jhN74RQ8IBKH+e+ciEYRt4J4BZGC+QE3DmMObvjJ44JsmBrEqWcKDN
-        U/fpi/mdNk8+5LAUsw95Tx4TXeEKjAfZ3mzLDsDYA8dTwxzg47/0S95TJ1HQlmLcz/a0A81ewTPhyW00
-        tlJUOak0UxYURUe4BjoOodK+MXrimGw1CGdx1D854NwQ8dSDUB+76oz4E7rxLqhhUphWBQlpDnC+GqI0
-        pMfLlUcwf8/2OfoF9XCWjRqadaAkuuV2PGLdGFtTLw6c/jlBDSQm1FzamGwO/CvF6PtwxK12TgFOah3p
-        pKcYiqxMcQem9b3GH6OC3IGgy2Pvk+FpHK4c0MY1dak9WEQDyZh8efs/Pcczolvt07ZrhKPsSDKqVzqt
-        XHkXc6QWj3w8PiA40FxD4qkr2ugcQptEaWQROE+Pi+FK0uWp9eCh0svlrND1H+lppBmhdQbTGBcC0C+o
-        kUTV89XLaC/Bn4aS6Aq2GGsphNYZjDYnFooS4umgsTIP+b82NH+vWUAsZZVvKyEmqHuFgrQa0QhmdMCl
-        3nkjFKUhlWv6c2IzYkOg85yn2oIIDST1cFDeR5GML0U+vXiECR2UqO24urP1CjcvCfEX5QCCtFRUrW0A
-        AAAASUVORK5CYII=
-</value>
-  </data>
   <data name="OrdersButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAH
@@ -3284,6 +3262,28 @@
         0swqoYNKpwMqYW5KO6u9rSwUwGmzBX8LIKB/vFhzfOalNWwWwBl1IN0poa+FRgE8OQqww43XcYQSDvK4
         AIZv20umAKr0JswUwJsZdXxljrir+H3EC+CsOnBWW9CqDvQ4HRDAJnPEfSXtZ5EAjusyGlIEX6Y18IT5
         6aqmqZiYfwDY9iiZmhm+1gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ExitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAOESURBVFhHtVdL
+        axRBEO7srO/XRVFRfOtJPHjwpiIo+AP0oP6ZoAiGaHZmTFYjidGAHjx48uZFL8ZHjAgGVHwgkTUS4yHu
+        Tvcm0fGrnt51UtMz2d3Ego/pR722u6q6VjRMneEqxw9O5bygx/Hlk5wnx4EyUMm58rvjySGMi44bnBY9
+        4WojtQhUULug+BowBYQNopzz5Q3hq91GSwvkh8ug5CKUVZnyZjCd81SHGAiXG60N0lW5E4IjFoUtga5H
+        9JQ3Ge3zkFfdD6ESV7IIGBNu9YCxkkL6l1uNB8DHFFQAzp+GMVGobDbWGNGd247dVZdEb7jEcCXJLW8E
+        34+EXAr0ddhiwgQcEwhei/Ywh/EtwPbr35IslD7GmMlmwJUXtNE6Ralmi/ZBOjLLeg1VEocDjyx7WSjP
+        uQosUJ7bGG8KP9hqxjN5Xx0nZ+tAzIh7oYM9Og0umw1XXo+so8JhIa3IxB34Suz4tgO9NeDXP8WXyzWC
+        CuJurYjKq5WBYHNg1MxtGBee2otvH/Antm4FbJ8hhUW+EUOzDowSD11L3lUnMP/M9jn6cAL6YbFtElpy
+        gIJS+PIo0nclpTHWfzM+DceVL0jhN74RQ8IBKH+e+ciEYRt4J4BZGC+QE3DmMObvjJ44JsmBrEqWcKDN
+        U/fpi/mdNk8+5LAUsw95Tx4TXeEKjAfZ3mzLDsDYA8dTwxzg47/0S95TJ1HQlmLcz/a0A81ewTPhyW00
+        tlJUOak0UxYURUe4BjoOodK+MXrimGw1CGdx1D854NwQ8dSDUB+76oz4E7rxLqhhUphWBQlpDnC+GqI0
+        pMfLlUcwf8/2OfoF9XCWjRqadaAkuuV2PGLdGFtTLw6c/jlBDSQm1FzamGwO/CvF6PtwxK12TgFOah3p
+        pKcYiqxMcQem9b3GH6OC3IGgy2Pvk+FpHK4c0MY1dak9WEQDyZh8efs/Pcczolvt07ZrhKPsSDKqVzqt
+        XHkXc6QWj3w8PiA40FxD4qkr2ugcQptEaWQROE+Pi+FK0uWp9eCh0svlrND1H+lppBmhdQbTGBcC0C+o
+        kUTV89XLaC/Bn4aS6Aq2GGsphNYZjDYnFooS4umgsTIP+b82NH+vWUAsZZVvKyEmqHuFgrQa0QhmdMCl
+        3nkjFKUhlWv6c2IzYkOg85yn2oIIDST1cFDeR5GML0U+vXiECR2UqO24urP1CjcvCfEX5QCCtFRUrW0A
+        AAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

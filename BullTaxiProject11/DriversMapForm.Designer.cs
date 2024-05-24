@@ -68,7 +68,7 @@
             this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.LoginLabel.Location = new System.Drawing.Point(1771, 147);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(87, 32);
+            this.LoginLabel.Size = new System.Drawing.Size(70, 27);
             this.LoginLabel.TabIndex = 31;
             this.LoginLabel.Text = "Логін";
             // 
@@ -78,7 +78,7 @@
             this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.Login.Location = new System.Drawing.Point(55, 10);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(71, 26);
+            this.Login.Size = new System.Drawing.Size(71, 23);
             this.Login.TabIndex = 5;
             // 
             // pictureBox3
@@ -205,7 +205,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(74, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 32);
+            this.label2.Size = new System.Drawing.Size(98, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bull Taxi";
             // 
@@ -228,7 +228,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(267, 1222);
+            this.panel10.Size = new System.Drawing.Size(267, 884);
             this.panel10.TabIndex = 26;
             // 
             // Map
@@ -260,7 +260,7 @@
             // DriversMapForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1910, 1222);
+            this.ClientSize = new System.Drawing.Size(1556, 884);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.SearhOnMapButton);
             this.Controls.Add(this.panel1);

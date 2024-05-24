@@ -26,7 +26,6 @@ namespace BullTaxi
         private void CloseButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
             
         }
 
@@ -53,7 +52,7 @@ namespace BullTaxi
             {
                 MessageBox.Show("Введіть прізвище.");
             }
-            else if (Status.Text == "")
+            else if (StatusBox.Text == "")
             {
                 MessageBox.Show("Введіть статус.");
             }
@@ -81,7 +80,7 @@ namespace BullTaxi
                 {
                     {"username", Login.Text},
                     {"password", Password.Text},
-                    {"status", Status.Text},
+                    {"status", StatusBox.Text},
                     {"first name", FirstName.Text},
                     {"patronymic", Patronymic.Text},
                     {"last name", LastName.Text},

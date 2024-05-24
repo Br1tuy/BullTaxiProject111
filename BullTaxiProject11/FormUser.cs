@@ -16,6 +16,7 @@ namespace BullTaxi
 {
     public partial class FormUser : Form
     {
+        DriversMapForm driversMapForm;
         public FormUser()
         {
             InitializeComponent();
@@ -25,6 +26,9 @@ namespace BullTaxi
         string[] table_headers = new string[] { "Логін", "Статус", "Ім'я", "По батькові", "Фамілія", "Стать", "День народження", "Пошта", "Номер телефону"};
         Dictionary<string, string> dict;
         Dictionary<string, Dictionary<string, string>> users;
+        AddNewUserForm addNewUserForm;
+        ChangeOrgerUserForm changeOrgerUserForm;
+        DeleteUserForm deleteUserForm;
 
         private void Table_Load(object sender, EventArgs e)
         {
@@ -36,24 +40,41 @@ namespace BullTaxi
 
         private void RegistrationButton_Click(object sender, EventArgs e)
         {
-            AddNewUserForm AddNewUserForm = new AddNewUserForm();
-          
-            AddNewUserForm.ShowDialog();
-            
+            if (addNewUserForm == null || !addNewUserForm.Created)
+            {
+                addNewUserForm = new AddNewUserForm();
+                addNewUserForm.Show();
+            }
+            else
+            {
+                addNewUserForm.WindowState = FormWindowState.Normal;
+            }            
         }
 
         private void ChangeButton_Click(object sender, EventArgs e)
         {
-            ChangeOrgerUserForm changeOrgerUserForm = new ChangeOrgerUserForm();
-
-            changeOrgerUserForm.ShowDialog();
+            if (changeOrgerUserForm == null || !changeOrgerUserForm.Created)
+            {
+                changeOrgerUserForm = new ChangeOrgerUserForm();
+                changeOrgerUserForm.Show();
+            }
+            else
+            {
+                changeOrgerUserForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DeleteUserForm deleteUserForm = new DeleteUserForm();
-
-            deleteUserForm.ShowDialog();
+            if (deleteUserForm == null || !deleteUserForm.Created)
+            {
+                deleteUserForm = new DeleteUserForm();
+                deleteUserForm.Show();
+            }
+            else
+            {
+                deleteUserForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void ViewButton_Click(object sender, EventArgs e)
@@ -87,8 +108,15 @@ namespace BullTaxi
 
         private void DriversMapButton_Click(object sender, EventArgs e)
         {
-            DriversMapForm driversMapForm = new DriversMapForm();
-            driversMapForm.Show();
+            if (driversMapForm == null || !driversMapForm.Created)
+            {
+                driversMapForm = new DriversMapForm();
+                driversMapForm.Show();
+            }
+            else
+            {
+                driversMapForm.WindowState = FormWindowState.Maximized;
+            }
         }
     }
 }

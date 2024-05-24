@@ -16,6 +16,13 @@ namespace BullTaxiProject11
         Dictionary<string, string> dict;
         Dictionary<string, Dictionary<string, string>> active_orders;
         Dictionary<string, Dictionary<string, string>> completed_orders;
+        ActiveOrdersMapForm activeOrdersMapForm;
+        AddOrders AddOrdersForm;
+        ChangeActiveOrderForm changeActiveOrderForm;
+        ChangingCompletedOrderForm changingCompletedOrderForm;
+        AddCompletedOrderForm addCompletedOrderForm;
+        DeleteActiveOrderForm deleteActiveOrderForm;
+        DeleteCompletedOrderForm deleteCompletedOrder;
 
         public OrdersForm()
         {
@@ -28,23 +35,41 @@ namespace BullTaxiProject11
 
         private void AddActiveOrderButton_Click(object sender, EventArgs e)
         {
-            AddOrders AddOrdersForm = new AddOrders();
-
-            AddOrdersForm.ShowDialog();
+            if (AddOrdersForm == null || !AddOrdersForm.Created)
+            {
+                AddOrdersForm = new AddOrders();
+                AddOrdersForm.Show();
+            }
+            else
+            {
+                AddOrdersForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void ChangeActiveOrderButton_Click(object sender, EventArgs e)
         {
-            ChangeActiveOrderForm changeActiveOrderForm = new ChangeActiveOrderForm();
-
-            changeActiveOrderForm.ShowDialog();
+            if (changeActiveOrderForm == null || !changeActiveOrderForm.Created)
+            {
+                changeActiveOrderForm = new ChangeActiveOrderForm();
+                changeActiveOrderForm.Show();
+            }
+            else
+            {
+                changeActiveOrderForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void ChangeCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            ChangingCompletedOrderForm changingCompletedOrderForm = new ChangingCompletedOrderForm();
-
-            changingCompletedOrderForm.ShowDialog();
+            if (changingCompletedOrderForm == null || !changingCompletedOrderForm.Created)
+            {
+                changingCompletedOrderForm = new ChangingCompletedOrderForm();
+                changingCompletedOrderForm.Show();
+            }
+            else
+            {
+                changingCompletedOrderForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void ViewCompletedOrderButton_Click(object sender, EventArgs e)
@@ -66,9 +91,9 @@ namespace BullTaxiProject11
                 }
 
 
-                if (active_orders != null)
+                if (completed_orders != null)
                 {
-                    foreach (var items in active_orders)
+                    foreach (var items in completed_orders)
                     {
                         Table.Invoke(new MethodInvoker(() => Table.Rows.Add(items.Key, items.Value["taxi driver"], items.Value["opening time"], items.Value["closing time"], items.Value["starting address"], items.Value["final address"], items.Value["price"])));
                     }
@@ -85,9 +110,15 @@ namespace BullTaxiProject11
 
         private void AddCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            AddCompletedOrderForm addCompletedOrderForm = new AddCompletedOrderForm();
-
-            addCompletedOrderForm.ShowDialog();
+            if (addCompletedOrderForm == null || !addCompletedOrderForm.Created)
+            {
+                addCompletedOrderForm = new AddCompletedOrderForm();
+                addCompletedOrderForm.Show();
+            }
+            else
+            {
+                addCompletedOrderForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void Table_Load(object sender, EventArgs e)
@@ -101,16 +132,28 @@ namespace BullTaxiProject11
 
         private void DeleteActiveOrderButton_Click(object sender, EventArgs e)
         {
-            DeleteActiveOrderForm deleteActiveOrderForm = new DeleteActiveOrderForm();
-
-            deleteActiveOrderForm.ShowDialog();
+            if (deleteActiveOrderForm == null || !deleteActiveOrderForm.Created)
+            {
+                deleteActiveOrderForm = new DeleteActiveOrderForm();
+                deleteActiveOrderForm.Show();
+            }
+            else
+            {
+                deleteActiveOrderForm.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void DeleteCompletedOrderButton_Click(object sender, EventArgs e)
         {
-            DeleteCompletedOrderForm deleteCompletedOrder = new DeleteCompletedOrderForm();
-
-            deleteCompletedOrder.ShowDialog();
+            if (deleteCompletedOrder == null || !deleteCompletedOrder.Created)
+            {
+                deleteCompletedOrder = new DeleteCompletedOrderForm();
+                deleteCompletedOrder.Show();
+            }
+            else
+            {
+                deleteCompletedOrder.WindowState = FormWindowState.Normal;
+            }
         }
 
         private void ViewActiveOrderButton_Click(object sender, EventArgs e)
@@ -151,8 +194,15 @@ namespace BullTaxiProject11
 
         private void ActiveOrdersMapButton_Click(object sender, EventArgs e)
         {
-            ActiveOrdersMapForm activeOrdersMapForm = new ActiveOrdersMapForm();
-            activeOrdersMapForm.Show();
+            if (activeOrdersMapForm == null || !activeOrdersMapForm.Created)
+            {
+                activeOrdersMapForm = new ActiveOrdersMapForm();
+                activeOrdersMapForm.Show();
+            }
+            else
+            {
+                activeOrdersMapForm.WindowState = FormWindowState.Maximized;
+            }
         }
     }
 }
