@@ -1,4 +1,5 @@
 ﻿using BullTaxi;
+using MainFormBullTaxi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -96,8 +97,8 @@ namespace BullTaxiProject11
         private void ExitButton_Click(object sender, EventArgs e)
         {
             this.Close();
-            LoginForm LoginForm = new LoginForm();
-            LoginForm.Show();
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
         }
     }
 }
