@@ -186,6 +186,7 @@
             this.ExitButton.TabIndex = 4;
             this.ExitButton.Text = "        Вихід";
             this.ExitButton.UseVisualStyleBackColor = false;
+            this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
             // UpperPanel
             // 

@@ -92,5 +92,12 @@ namespace BullTaxiProject11
         {
             orders = null;
         }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm LoginForm = new LoginForm();
+            LoginForm.Show();
+        }
     }
 }
