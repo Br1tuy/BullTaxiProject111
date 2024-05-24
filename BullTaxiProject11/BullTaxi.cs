@@ -97,10 +97,15 @@ namespace MainFormBullTaxi
             
 
              }
-            */
+            
             this.Hide();
             BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
             bullTaxiMainForm.Show();
+            */
+            this.Hide();
+            MainOperatorForm mainOperatorForm = new MainOperatorForm();
+            mainOperatorForm.Show();
+            
         }
 
         private void EmailLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
