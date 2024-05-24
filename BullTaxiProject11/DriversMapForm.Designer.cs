@@ -122,7 +122,7 @@
             this.Table.Name = "Table";
             this.Table.RowHeadersWidth = 51;
             this.Table.RowTemplate.Height = 24;
-            this.Table.Size = new System.Drawing.Size(318, 1144);
+            this.Table.Size = new System.Drawing.Size(298, 1144);
             this.Table.TabIndex = 30;
             // 
             // ViewDriverButton
@@ -239,7 +239,7 @@
             this.Map.GrayScaleMode = false;
             this.Map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.Map.LevelsKeepInMemory = 5;
-            this.Map.Location = new System.Drawing.Point(654, 49);
+            this.Map.Location = new System.Drawing.Point(573, 49);
             this.Map.MarkersEnabled = true;
             this.Map.MaxZoom = 2;
             this.Map.MinZoom = 2;
@@ -253,7 +253,7 @@
             this.Map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.Map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.Map.ShowTileGridLines = false;
-            this.Map.Size = new System.Drawing.Size(1031, 1144);
+            this.Map.Size = new System.Drawing.Size(1112, 1144);
             this.Map.TabIndex = 28;
             this.Map.Zoom = 0D;
             // 
