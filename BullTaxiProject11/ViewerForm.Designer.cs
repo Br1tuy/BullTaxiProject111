@@ -35,8 +35,13 @@
             this.LogoPictureBox = new System.Windows.Forms.PictureBox();
             this.CloseButton = new System.Windows.Forms.Button();
             this.TurnButton = new System.Windows.Forms.Button();
+            this.Table = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.ViewActiveOrderButton = new System.Windows.Forms.Button();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel10
@@ -112,11 +117,44 @@
             this.TurnButton.UseVisualStyleBackColor = true;
             this.TurnButton.Click += new System.EventHandler(this.TurnButton_Click);
             // 
+            // Table
+            // 
+            this.Table.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Table.Location = new System.Drawing.Point(318, 106);
+            this.Table.Name = "Table";
+            this.Table.RowHeadersWidth = 51;
+            this.Table.RowTemplate.Height = 24;
+            this.Table.Size = new System.Drawing.Size(1375, 938);
+            this.Table.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.ViewActiveOrderButton);
+            this.panel3.Location = new System.Drawing.Point(318, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(250, 70);
+            this.panel3.TabIndex = 15;
+            // 
+            // ViewActiveOrderButton
+            // 
+            this.ViewActiveOrderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ViewActiveOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ViewActiveOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ViewActiveOrderButton.Location = new System.Drawing.Point(-3, 0);
+            this.ViewActiveOrderButton.Name = "ViewActiveOrderButton";
+            this.ViewActiveOrderButton.Size = new System.Drawing.Size(250, 70);
+            this.ViewActiveOrderButton.TabIndex = 0;
+            this.ViewActiveOrderButton.Text = "Показ активних замовленнь";
+            this.ViewActiveOrderButton.UseVisualStyleBackColor = false;
+            // 
             // ViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1710, 1150);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.Table);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.TurnButton);
             this.Controls.Add(this.panel10);
@@ -126,6 +164,8 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -138,5 +178,8 @@
         private System.Windows.Forms.PictureBox LogoPictureBox;
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Button TurnButton;
+        private System.Windows.Forms.DataGridView Table;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button ViewActiveOrderButton;
     }
 }
