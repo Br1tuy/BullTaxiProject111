@@ -16,5 +16,15 @@ namespace BullTaxiProject11
         {
             InitializeComponent();
         }
+
+        private void CloseButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void TurnButton_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
     }
 }
