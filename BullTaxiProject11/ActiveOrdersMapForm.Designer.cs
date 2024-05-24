@@ -46,12 +46,14 @@
             this.IDLabel = new System.Windows.Forms.Label();
             this.SearhOnMapButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Maps = new System.Windows.Forms.DataGridView();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Table)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maps)).BeginInit();
             this.SuspendLayout();
             // 
             // CloseButton
@@ -148,7 +150,7 @@
             this.Map.GrayScaleMode = false;
             this.Map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.Map.LevelsKeepInMemory = 5;
-            this.Map.Location = new System.Drawing.Point(286, 49);
+            this.Map.Location = new System.Drawing.Point(557, 49);
             this.Map.MarkersEnabled = true;
             this.Map.MaxZoom = 2;
             this.Map.MinZoom = 2;
@@ -162,7 +164,7 @@
             this.Map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.Map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.Map.ShowTileGridLines = false;
-            this.Map.Size = new System.Drawing.Size(1407, 1148);
+            this.Map.Size = new System.Drawing.Size(1136, 1148);
             this.Map.TabIndex = 15;
             this.Map.Zoom = 0D;
             // 
@@ -258,12 +260,24 @@
             this.panel2.Size = new System.Drawing.Size(184, 71);
             this.panel2.TabIndex = 24;
             // 
+            // Maps
+            // 
+            this.Maps.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Maps.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Maps.Location = new System.Drawing.Point(273, 49);
+            this.Maps.Name = "Maps";
+            this.Maps.RowHeadersWidth = 51;
+            this.Maps.RowTemplate.Height = 24;
+            this.Maps.Size = new System.Drawing.Size(278, 1148);
+            this.Maps.TabIndex = 31;
+            // 
             // ActiveOrdersMapForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1910, 1222);
+            this.Controls.Add(this.Maps);
             this.Controls.Add(this.SearhOnMapButton);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -286,6 +300,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Maps)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +325,6 @@
         private System.Windows.Forms.Label IDLabel;
         private System.Windows.Forms.Button SearhOnMapButton;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView Maps;
     }
 }
