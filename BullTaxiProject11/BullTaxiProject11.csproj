@@ -174,6 +174,12 @@
     <Compile Include="MainOperatorForm.Designer.cs">
       <DependentUpon>MainOperatorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OrdersOperatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdersOperatorForm.Designer.cs">
+      <DependentUpon>OrdersOperatorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProgramClient.cs" />
     <Compile Include="DeleteActiveOrderForm.cs">
       <SubType>Form</SubType>
@@ -254,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OrdersForm.resx">
       <DependentUpon>OrdersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdersOperatorForm.resx">
+      <DependentUpon>OrdersOperatorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

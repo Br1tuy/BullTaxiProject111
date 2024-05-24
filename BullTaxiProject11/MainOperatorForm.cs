@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BullTaxi;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace BullTaxiProject11
         Point dragFormPoint;
         bool dragging = false;
         bool sidebarExpand = true;
+        FormUser user;
+        OrdersOperatorForm orders;
         public MainOperatorForm()
         {
             InitializeComponent();
@@ -36,7 +39,7 @@ namespace BullTaxiProject11
                     sidebarExpand = false;
                     sidebarTransition.Stop();
                     OrdersButton.Width = SidebarPanel.Width;
-                    UsersButton.Width = SidebarPanel.Width;
+                    
 
                     ExitButton.Width = SidebarPanel.Width;
                 }
@@ -49,7 +52,7 @@ namespace BullTaxiProject11
                     sidebarExpand = true;
                     sidebarTransition.Stop();
                     OrdersButton.Width = SidebarPanel.Width;
-                    UsersButton.Width = SidebarPanel.Width;
+                   
 
                     ExitButton.Width = SidebarPanel.Width;
 
@@ -65,6 +68,29 @@ namespace BullTaxiProject11
         private void TurnButton_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
+        }
+
+        private void OrdersButton_Click(object sender, EventArgs e)
+        {
+            if (user != null)
+            {
+                user.Hide();
+            }
+            if (orders == null)
+            {
+                orders = new OrdersOperatorForm();
+                orders.FormClosed += OrderOperator_FormClosed;
+                orders.MdiParent = this; 
+                orders.Show();
+            }
+            else
+            {
+                orders.Show();
+            }
+        }
+        private void OrderOperator_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            orders = null;
         }
     }
 }
