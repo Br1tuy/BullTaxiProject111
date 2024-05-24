@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DriversMapForm));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.IDLabel = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.TextBox();
+            this.LoginLabel = new System.Windows.Forms.Label();
+            this.Login = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.SearhOnMapButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ViewActiveOrderButton = new System.Windows.Forms.Button();
+            this.Table = new System.Windows.Forms.DataGridView();
+            this.ViewDriverButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.TurnButton = new System.Windows.Forms.Button();
@@ -45,10 +45,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
+            this.Map = new GMap.NET.WindowsForms.GMapControl();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel10.SuspendLayout();
@@ -61,25 +61,25 @@
             this.panel2.Size = new System.Drawing.Size(255, 71);
             this.panel2.TabIndex = 34;
             // 
-            // IDLabel
+            // LoginLabel
             // 
-            this.IDLabel.AutoSize = true;
-            this.IDLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IDLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.IDLabel.Location = new System.Drawing.Point(1562, 142);
-            this.IDLabel.Name = "IDLabel";
-            this.IDLabel.Size = new System.Drawing.Size(46, 32);
-            this.IDLabel.TabIndex = 31;
-            this.IDLabel.Text = "ID";
+            this.LoginLabel.AutoSize = true;
+            this.LoginLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.LoginLabel.Location = new System.Drawing.Point(1562, 142);
+            this.LoginLabel.Name = "LoginLabel";
+            this.LoginLabel.Size = new System.Drawing.Size(70, 27);
+            this.LoginLabel.TabIndex = 31;
+            this.LoginLabel.Text = "Логін";
             // 
-            // ID
+            // Login
             // 
-            this.ID.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.ID.Location = new System.Drawing.Point(55, 10);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(71, 26);
-            this.ID.TabIndex = 5;
+            this.Login.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.Login.Location = new System.Drawing.Point(55, 10);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(71, 23);
+            this.Login.TabIndex = 5;
             // 
             // pictureBox3
             // 
@@ -102,39 +102,41 @@
             this.SearhOnMapButton.TabIndex = 33;
             this.SearhOnMapButton.Text = "Показ на карті ";
             this.SearhOnMapButton.UseVisualStyleBackColor = false;
+            this.SearhOnMapButton.Click += new System.EventHandler(this.SearhOnMapButton_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
-            this.panel1.Controls.Add(this.ID);
+            this.panel1.Controls.Add(this.Login);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Location = new System.Drawing.Point(1568, 178);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(147, 46);
             this.panel1.TabIndex = 32;
             // 
-            // dataGridView1
+            // Table
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(269, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(318, 842);
-            this.dataGridView1.TabIndex = 30;
+            this.Table.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Table.Location = new System.Drawing.Point(269, 49);
+            this.Table.Name = "Table";
+            this.Table.RowHeadersWidth = 51;
+            this.Table.RowTemplate.Height = 24;
+            this.Table.Size = new System.Drawing.Size(318, 842);
+            this.Table.TabIndex = 30;
             // 
-            // ViewActiveOrderButton
+            // ViewDriverButton
             // 
-            this.ViewActiveOrderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.ViewActiveOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ViewActiveOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ViewActiveOrderButton.Location = new System.Drawing.Point(1543, 65);
-            this.ViewActiveOrderButton.Name = "ViewActiveOrderButton";
-            this.ViewActiveOrderButton.Size = new System.Drawing.Size(259, 70);
-            this.ViewActiveOrderButton.TabIndex = 25;
-            this.ViewActiveOrderButton.Text = "Показ користувачів";
-            this.ViewActiveOrderButton.UseVisualStyleBackColor = false;
+            this.ViewDriverButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
+            this.ViewDriverButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ViewDriverButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ViewDriverButton.Location = new System.Drawing.Point(1543, 65);
+            this.ViewDriverButton.Name = "ViewDriverButton";
+            this.ViewDriverButton.Size = new System.Drawing.Size(259, 70);
+            this.ViewDriverButton.TabIndex = 25;
+            this.ViewDriverButton.Text = "Показ таксистів";
+            this.ViewDriverButton.UseVisualStyleBackColor = false;
+            this.ViewDriverButton.Click += new System.EventHandler(this.ViewDriverButton_Click);
             // 
             // panel3
             // 
@@ -203,7 +205,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(74, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 32);
+            this.label2.Size = new System.Drawing.Size(98, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bull Taxi";
             // 
@@ -226,56 +228,58 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(267, 900);
+            this.panel10.Size = new System.Drawing.Size(267, 884);
             this.panel10.TabIndex = 26;
             // 
-            // gMapControl1
+            // Map
             // 
-            this.gMapControl1.Bearing = 0F;
-            this.gMapControl1.CanDragMap = true;
-            this.gMapControl1.EmptyTileColor = System.Drawing.Color.Navy;
-            this.gMapControl1.GrayScaleMode = false;
-            this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
-            this.gMapControl1.LevelsKeepInMemory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(593, 49);
-            this.gMapControl1.MarkersEnabled = true;
-            this.gMapControl1.MaxZoom = 2;
-            this.gMapControl1.MinZoom = 2;
-            this.gMapControl1.MouseWheelZoomEnabled = true;
-            this.gMapControl1.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
-            this.gMapControl1.Name = "gMapControl1";
-            this.gMapControl1.NegativeMode = false;
-            this.gMapControl1.PolygonsEnabled = true;
-            this.gMapControl1.RetryLoadTile = 0;
-            this.gMapControl1.RoutesEnabled = true;
-            this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
-            this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
-            this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(948, 839);
-            this.gMapControl1.TabIndex = 28;
-            this.gMapControl1.Zoom = 0D;
+            this.Map.Bearing = 0F;
+            this.Map.CanDragMap = true;
+            this.Map.EmptyTileColor = System.Drawing.Color.Navy;
+            this.Map.GrayScaleMode = false;
+            this.Map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
+            this.Map.LevelsKeepInMemory = 5;
+            this.Map.Location = new System.Drawing.Point(593, 49);
+            this.Map.MarkersEnabled = true;
+            this.Map.MaxZoom = 2;
+            this.Map.MinZoom = 2;
+            this.Map.MouseWheelZoomEnabled = true;
+            this.Map.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
+            this.Map.Name = "Map";
+            this.Map.NegativeMode = false;
+            this.Map.PolygonsEnabled = true;
+            this.Map.RetryLoadTile = 0;
+            this.Map.RoutesEnabled = true;
+            this.Map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
+            this.Map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
+            this.Map.ShowTileGridLines = false;
+            this.Map.Size = new System.Drawing.Size(948, 839);
+            this.Map.TabIndex = 28;
+            this.Map.Zoom = 0D;
             // 
             // DriversMapForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1800, 900);
-            this.Controls.Add(this.IDLabel);
+            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.SearhOnMapButton);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.ViewActiveOrderButton);
+            this.Controls.Add(this.Table);
+            this.Controls.Add(this.ViewDriverButton);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.gMapControl1);
+            this.Controls.Add(this.Map);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DriversMapForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DriversMapForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table)).EndInit();
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel10.ResumeLayout(false);
@@ -288,13 +292,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label IDLabel;
-        private System.Windows.Forms.TextBox ID;
+        private System.Windows.Forms.Label LoginLabel;
+        private System.Windows.Forms.TextBox Login;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button SearhOnMapButton;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button ViewActiveOrderButton;
+        private System.Windows.Forms.DataGridView Table;
+        private System.Windows.Forms.Button ViewDriverButton;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button TurnButton;
@@ -303,6 +307,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel10;
-        private GMap.NET.WindowsForms.GMapControl gMapControl1;
+        private GMap.NET.WindowsForms.GMapControl Map;
     }
 }

@@ -74,10 +74,6 @@ namespace BullTaxiProject11
             {
                 MessageBox.Show("Введіть початкову адресу.");
             }
-            else if (FinalAddress.Text == "")
-            {
-                MessageBox.Show("Введіть кінцеву адресу.");
-            }
             else if (OpeningTime.Text == "")
             {
                 MessageBox.Show("Введіть час відкриття замовлення.");
