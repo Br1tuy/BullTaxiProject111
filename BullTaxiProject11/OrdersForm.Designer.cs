@@ -235,9 +235,8 @@
             this.Table.Name = "Table";
             this.Table.RowHeadersWidth = 51;
             this.Table.RowTemplate.Height = 24;
-            this.Table.Size = new System.Drawing.Size(1900, 950);
+            this.Table.Size = new System.Drawing.Size(1675, 938);
             this.Table.TabIndex = 13;
-            
             // 
             // panel9
             // 
@@ -264,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1900, 1222);
+            this.ClientSize = new System.Drawing.Size(1710, 1150);
             this.ControlBox = false;
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.Table);

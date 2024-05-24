@@ -56,9 +56,9 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(1547, 243);
+            this.panel2.Location = new System.Drawing.Point(1699, 241);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(255, 71);
+            this.panel2.Size = new System.Drawing.Size(208, 71);
             this.panel2.TabIndex = 34;
             // 
             // LoginLabel
@@ -66,9 +66,9 @@
             this.LoginLabel.AutoSize = true;
             this.LoginLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.LoginLabel.Location = new System.Drawing.Point(1562, 142);
+            this.LoginLabel.Location = new System.Drawing.Point(1771, 147);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(70, 27);
+            this.LoginLabel.Size = new System.Drawing.Size(87, 32);
             this.LoginLabel.TabIndex = 31;
             this.LoginLabel.Text = "Логін";
             // 
@@ -78,7 +78,7 @@
             this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.Login.Location = new System.Drawing.Point(55, 10);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(71, 23);
+            this.Login.Size = new System.Drawing.Size(71, 26);
             this.Login.TabIndex = 5;
             // 
             // pictureBox3
@@ -96,9 +96,9 @@
             this.SearhOnMapButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.SearhOnMapButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.SearhOnMapButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.SearhOnMapButton.Location = new System.Drawing.Point(1543, 243);
+            this.SearhOnMapButton.Location = new System.Drawing.Point(1695, 241);
             this.SearhOnMapButton.Name = "SearhOnMapButton";
-            this.SearhOnMapButton.Size = new System.Drawing.Size(259, 71);
+            this.SearhOnMapButton.Size = new System.Drawing.Size(212, 71);
             this.SearhOnMapButton.TabIndex = 33;
             this.SearhOnMapButton.Text = "Показ на карті ";
             this.SearhOnMapButton.UseVisualStyleBackColor = false;
@@ -109,7 +109,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.Login);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(1568, 178);
+            this.panel1.Location = new System.Drawing.Point(1732, 182);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(147, 46);
             this.panel1.TabIndex = 32;
@@ -122,7 +122,7 @@
             this.Table.Name = "Table";
             this.Table.RowHeadersWidth = 51;
             this.Table.RowTemplate.Height = 24;
-            this.Table.Size = new System.Drawing.Size(318, 842);
+            this.Table.Size = new System.Drawing.Size(318, 1144);
             this.Table.TabIndex = 30;
             // 
             // ViewDriverButton
@@ -130,9 +130,9 @@
             this.ViewDriverButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.ViewDriverButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ViewDriverButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ViewDriverButton.Location = new System.Drawing.Point(1543, 65);
+            this.ViewDriverButton.Location = new System.Drawing.Point(1695, 59);
             this.ViewDriverButton.Name = "ViewDriverButton";
-            this.ViewDriverButton.Size = new System.Drawing.Size(259, 70);
+            this.ViewDriverButton.Size = new System.Drawing.Size(203, 70);
             this.ViewDriverButton.TabIndex = 25;
             this.ViewDriverButton.Text = "Показ таксистів";
             this.ViewDriverButton.UseVisualStyleBackColor = false;
@@ -140,9 +140,9 @@
             // 
             // panel3
             // 
-            this.panel3.Location = new System.Drawing.Point(1564, 65);
+            this.panel3.Location = new System.Drawing.Point(1703, 59);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(238, 70);
+            this.panel3.Size = new System.Drawing.Size(195, 70);
             this.panel3.TabIndex = 29;
             // 
             // panel6
@@ -151,7 +151,7 @@
             this.panel6.Controls.Add(this.CloseButton);
             this.panel6.Location = new System.Drawing.Point(2, 0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1795, 43);
+            this.panel6.Size = new System.Drawing.Size(1905, 43);
             this.panel6.TabIndex = 27;
             this.panel6.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDoubleClick);
             this.panel6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel6_MouseDown);
@@ -165,7 +165,7 @@
             this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TurnButton.Location = new System.Drawing.Point(1709, 0);
+            this.TurnButton.Location = new System.Drawing.Point(1816, 3);
             this.TurnButton.Name = "TurnButton";
             this.TurnButton.Size = new System.Drawing.Size(40, 40);
             this.TurnButton.TabIndex = 11;
@@ -180,7 +180,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.CloseButton.Location = new System.Drawing.Point(1755, 0);
+            this.CloseButton.Location = new System.Drawing.Point(1862, 3);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(40, 40);
             this.CloseButton.TabIndex = 4;
@@ -192,7 +192,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(36, 857);
+            this.label1.Location = new System.Drawing.Point(14, 1159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 34);
             this.label1.TabIndex = 3;
@@ -205,7 +205,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(74, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 27);
+            this.label2.Size = new System.Drawing.Size(125, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bull Taxi";
             // 
@@ -228,7 +228,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(267, 884);
+            this.panel10.Size = new System.Drawing.Size(267, 1222);
             this.panel10.TabIndex = 26;
             // 
             // Map
@@ -239,7 +239,7 @@
             this.Map.GrayScaleMode = false;
             this.Map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.Map.LevelsKeepInMemory = 5;
-            this.Map.Location = new System.Drawing.Point(593, 49);
+            this.Map.Location = new System.Drawing.Point(654, 49);
             this.Map.MarkersEnabled = true;
             this.Map.MaxZoom = 2;
             this.Map.MinZoom = 2;
@@ -253,14 +253,14 @@
             this.Map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.Map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.Map.ShowTileGridLines = false;
-            this.Map.Size = new System.Drawing.Size(948, 839);
+            this.Map.Size = new System.Drawing.Size(1031, 1144);
             this.Map.TabIndex = 28;
             this.Map.Zoom = 0D;
             // 
             // DriversMapForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.ClientSize = new System.Drawing.Size(1910, 1222);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.SearhOnMapButton);
             this.Controls.Add(this.panel1);

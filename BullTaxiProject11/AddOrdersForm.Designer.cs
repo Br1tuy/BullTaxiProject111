@@ -71,7 +71,7 @@
             this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(903, 585);
+            this.panel2.Size = new System.Drawing.Size(836, 585);
             this.panel2.TabIndex = 10;
             // 
             // button1
@@ -103,7 +103,7 @@
             this.AddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.AddressLabel.Location = new System.Drawing.Point(6, 132);
             this.AddressLabel.Name = "AddressLabel";
-            this.AddressLabel.Size = new System.Drawing.Size(614, 51);
+            this.AddressLabel.Size = new System.Drawing.Size(389, 32);
             this.AddressLabel.TabIndex = 12;
             this.AddressLabel.Text = "Початок та кінець маршруту";
             // 
@@ -121,7 +121,7 @@
             this.panel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.panel8.Location = new System.Drawing.Point(300, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(603, 585);
+            this.panel8.Size = new System.Drawing.Size(536, 585);
             this.panel8.TabIndex = 9;
             // 
             // TimeLabel
@@ -131,7 +131,7 @@
             this.TimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.TimeLabel.Location = new System.Drawing.Point(6, 317);
             this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(568, 51);
+            this.TimeLabel.Size = new System.Drawing.Size(360, 32);
             this.TimeLabel.TabIndex = 18;
             this.TimeLabel.Text = "Час відкриття замовлення";
             // 
@@ -151,7 +151,7 @@
             this.OpeningTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.OpeningTime.Location = new System.Drawing.Point(55, 10);
             this.OpeningTime.Name = "OpeningTime";
-            this.OpeningTime.Size = new System.Drawing.Size(370, 38);
+            this.OpeningTime.Size = new System.Drawing.Size(370, 26);
             this.OpeningTime.TabIndex = 5;
             // 
             // pictureBox1
@@ -171,7 +171,7 @@
             this.WindowNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.WindowNameLabel.Location = new System.Drawing.Point(6, 62);
             this.WindowNameLabel.Name = "WindowNameLabel";
-            this.WindowNameLabel.Size = new System.Drawing.Size(727, 51);
+            this.WindowNameLabel.Size = new System.Drawing.Size(460, 32);
             this.WindowNameLabel.TabIndex = 3;
             this.WindowNameLabel.Text = "Додавання активного замовлення";
             // 
@@ -195,7 +195,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.CloseButton.Location = new System.Drawing.Point(564, 0);
+            this.CloseButton.Location = new System.Drawing.Point(483, 0);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(40, 41);
             this.CloseButton.TabIndex = 3;
@@ -210,7 +210,7 @@
             this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TurnButton.Location = new System.Drawing.Point(518, 0);
+            this.TurnButton.Location = new System.Drawing.Point(437, 3);
             this.TurnButton.Name = "TurnButton";
             this.TurnButton.Size = new System.Drawing.Size(40, 41);
             this.TurnButton.TabIndex = 11;
@@ -234,7 +234,7 @@
             this.StartingAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.StartingAddress.Location = new System.Drawing.Point(55, 11);
             this.StartingAddress.Name = "StartingAddress";
-            this.StartingAddress.Size = new System.Drawing.Size(370, 38);
+            this.StartingAddress.Size = new System.Drawing.Size(370, 26);
             this.StartingAddress.TabIndex = 5;
             // 
             // pictureBox8
@@ -285,11 +285,10 @@
             // 
             this.FinalAddress.Font = new System.Drawing.Font("Georgia", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FinalAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.FinalAddress.Location = new System.Drawing.Point(58, 11);
+            this.FinalAddress.Location = new System.Drawing.Point(56, 10);
             this.FinalAddress.Name = "FinalAddress";
-            this.FinalAddress.Size = new System.Drawing.Size(370, 38);
+            this.FinalAddress.Size = new System.Drawing.Size(370, 26);
             this.FinalAddress.TabIndex = 5;
-            this.FinalAddress.UseSystemPasswordChar = true;
             // 
             // LogoPictureBox
             // 
@@ -308,7 +307,7 @@
             this.TaxiNameLabel.ForeColor = System.Drawing.SystemColors.Control;
             this.TaxiNameLabel.Location = new System.Drawing.Point(54, 223);
             this.TaxiNameLabel.Name = "TaxiNameLabel";
-            this.TaxiNameLabel.Size = new System.Drawing.Size(197, 51);
+            this.TaxiNameLabel.Size = new System.Drawing.Size(125, 32);
             this.TaxiNameLabel.TabIndex = 2;
             this.TaxiNameLabel.Text = "Bull Taxi";
             // 
@@ -326,9 +325,9 @@
             // 
             // AddOrders
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(903, 585);
+            this.ClientSize = new System.Drawing.Size(836, 585);
             this.ControlBox = false;
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel10);

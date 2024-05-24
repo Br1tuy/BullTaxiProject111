@@ -358,7 +358,7 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.CloseButton.Location = new System.Drawing.Point(409, 0);
+            this.CloseButton.Location = new System.Drawing.Point(422, 0);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(40, 40);
             this.CloseButton.TabIndex = 3;
@@ -373,7 +373,7 @@
             this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TurnButton.Location = new System.Drawing.Point(363, 3);
+            this.TurnButton.Location = new System.Drawing.Point(376, 0);
             this.TurnButton.Name = "TurnButton";
             this.TurnButton.Size = new System.Drawing.Size(40, 40);
             this.TurnButton.TabIndex = 11;

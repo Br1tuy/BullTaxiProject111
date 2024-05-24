@@ -144,7 +144,7 @@ namespace BullTaxiProject11
             }
             else 
             {
-                MessageBox.Show("Непривильний логін.");
+                MessageBox.Show("Неправильний логін.");
             }
         }
     }
