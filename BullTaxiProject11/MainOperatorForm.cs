@@ -14,8 +14,7 @@ namespace BullTaxiProject11
 {
     public partial class MainOperatorForm : Form
     {
-        Point dragCursorPoint;
-        Point dragFormPoint;
+        
         bool dragging = false;
         bool sidebarExpand = true;
         FormUser user;
