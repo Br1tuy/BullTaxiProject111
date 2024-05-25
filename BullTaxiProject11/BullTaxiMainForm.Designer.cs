@@ -64,10 +64,10 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.ExitButton);
-            this.panel5.Location = new System.Drawing.Point(2, 192);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(3, 234);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(128, 38);
+            this.panel5.Size = new System.Drawing.Size(171, 47);
             this.panel5.TabIndex = 5;
             // 
             // ExitButton
@@ -78,11 +78,11 @@
             this.ExitButton.ForeColor = System.Drawing.Color.White;
             this.ExitButton.Image = ((System.Drawing.Image)(resources.GetObject("ExitButton.Image")));
             this.ExitButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ExitButton.Location = new System.Drawing.Point(-3, -6);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ExitButton.Location = new System.Drawing.Point(-4, -7);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExitButton.Name = "ExitButton";
-            this.ExitButton.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.ExitButton.Size = new System.Drawing.Size(152, 48);
+            this.ExitButton.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.ExitButton.Size = new System.Drawing.Size(203, 59);
             this.ExitButton.TabIndex = 4;
             this.ExitButton.Text = "        Вихід";
             this.ExitButton.UseVisualStyleBackColor = false;
@@ -96,11 +96,11 @@
             this.UsersButton.ForeColor = System.Drawing.Color.White;
             this.UsersButton.Image = ((System.Drawing.Image)(resources.GetObject("UsersButton.Image")));
             this.UsersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.UsersButton.Location = new System.Drawing.Point(-4, -10);
-            this.UsersButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsersButton.Location = new System.Drawing.Point(-5, -12);
+            this.UsersButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UsersButton.Name = "UsersButton";
-            this.UsersButton.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.UsersButton.Size = new System.Drawing.Size(152, 48);
+            this.UsersButton.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.UsersButton.Size = new System.Drawing.Size(203, 59);
             this.UsersButton.TabIndex = 4;
             this.UsersButton.Text = "        Користувачі";
             this.UsersButton.UseVisualStyleBackColor = false;
@@ -114,11 +114,11 @@
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-4, -10);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Location = new System.Drawing.Point(-5, -12);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.button4.Size = new System.Drawing.Size(152, 46);
+            this.button4.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.button4.Size = new System.Drawing.Size(203, 57);
             this.button4.TabIndex = 3;
             this.button4.Text = "Користувачі";
             this.button4.UseVisualStyleBackColor = false;
@@ -131,11 +131,11 @@
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-4, -10);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Location = new System.Drawing.Point(-5, -12);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.button3.Size = new System.Drawing.Size(152, 46);
+            this.button3.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.button3.Size = new System.Drawing.Size(203, 57);
             this.button3.TabIndex = 2;
             this.button3.Text = "Користувачі";
             this.button3.UseVisualStyleBackColor = false;
@@ -145,10 +145,10 @@
             this.panel4.Controls.Add(this.UsersButton);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.button3);
-            this.panel4.Location = new System.Drawing.Point(2, 155);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(3, 189);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(128, 33);
+            this.panel4.Size = new System.Drawing.Size(171, 41);
             this.panel4.TabIndex = 5;
             // 
             // OrdersButton
@@ -159,11 +159,11 @@
             this.OrdersButton.ForeColor = System.Drawing.Color.White;
             this.OrdersButton.Image = ((System.Drawing.Image)(resources.GetObject("OrdersButton.Image")));
             this.OrdersButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.OrdersButton.Location = new System.Drawing.Point(-4, -6);
-            this.OrdersButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.OrdersButton.Location = new System.Drawing.Point(-5, -7);
+            this.OrdersButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OrdersButton.Name = "OrdersButton";
-            this.OrdersButton.Padding = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.OrdersButton.Size = new System.Drawing.Size(152, 47);
+            this.OrdersButton.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
+            this.OrdersButton.Size = new System.Drawing.Size(203, 58);
             this.OrdersButton.TabIndex = 2;
             this.OrdersButton.Text = "        Замовлення";
             this.OrdersButton.UseVisualStyleBackColor = false;
@@ -172,10 +172,10 @@
             // LogoPictureBox
             // 
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(2, 2);
-            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogoPictureBox.Location = new System.Drawing.Point(3, 2);
+            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(146, 107);
+            this.LogoPictureBox.Size = new System.Drawing.Size(195, 132);
             this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoPictureBox.TabIndex = 7;
             this.LogoPictureBox.TabStop = false;
@@ -188,19 +188,19 @@
             this.SidebarPanel.Controls.Add(this.panel4);
             this.SidebarPanel.Controls.Add(this.panel5);
             this.SidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SidebarPanel.Location = new System.Drawing.Point(0, 35);
-            this.SidebarPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SidebarPanel.Location = new System.Drawing.Point(0, 43);
+            this.SidebarPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SidebarPanel.Name = "SidebarPanel";
-            this.SidebarPanel.Size = new System.Drawing.Size(149, 683);
+            this.SidebarPanel.Size = new System.Drawing.Size(199, 841);
             this.SidebarPanel.TabIndex = 3;
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.OrdersButton);
-            this.panel2.Location = new System.Drawing.Point(2, 113);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(3, 138);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(128, 38);
+            this.panel2.Size = new System.Drawing.Size(171, 47);
             this.panel2.TabIndex = 3;
             // 
             // FullSizeButton
@@ -211,10 +211,10 @@
             this.FullSizeButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FullSizeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.FullSizeButton.Image = ((System.Drawing.Image)(resources.GetObject("FullSizeButton.Image")));
-            this.FullSizeButton.Location = new System.Drawing.Point(1373, 2);
-            this.FullSizeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FullSizeButton.Location = new System.Drawing.Point(1831, 2);
+            this.FullSizeButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FullSizeButton.Name = "FullSizeButton";
-            this.FullSizeButton.Size = new System.Drawing.Size(26, 28);
+            this.FullSizeButton.Size = new System.Drawing.Size(35, 34);
             this.FullSizeButton.TabIndex = 13;
             this.FullSizeButton.UseVisualStyleBackColor = true;
             this.FullSizeButton.Click += new System.EventHandler(this.FullSizeButton_Click);
@@ -226,10 +226,10 @@
             this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TurnButton.Location = new System.Drawing.Point(1339, 1);
-            this.TurnButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TurnButton.Location = new System.Drawing.Point(1785, 1);
+            this.TurnButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TurnButton.Name = "TurnButton";
-            this.TurnButton.Size = new System.Drawing.Size(30, 32);
+            this.TurnButton.Size = new System.Drawing.Size(40, 39);
             this.TurnButton.TabIndex = 12;
             this.TurnButton.Text = "-";
             this.TurnButton.UseVisualStyleBackColor = true;
@@ -242,10 +242,10 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.CloseButton.Location = new System.Drawing.Point(1403, 1);
-            this.CloseButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CloseButton.Location = new System.Drawing.Point(1871, 1);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(30, 32);
+            this.CloseButton.Size = new System.Drawing.Size(40, 39);
             this.CloseButton.TabIndex = 4;
             this.CloseButton.Text = "X";
             this.CloseButton.UseVisualStyleBackColor = true;
@@ -255,10 +255,9 @@
             // 
             this.MenuLabel.AutoSize = true;
             this.MenuLabel.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MenuLabel.Location = new System.Drawing.Point(38, 6);
-            this.MenuLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MenuLabel.Location = new System.Drawing.Point(51, 7);
             this.MenuLabel.Name = "MenuLabel";
-            this.MenuLabel.Size = new System.Drawing.Size(106, 19);
+            this.MenuLabel.Size = new System.Drawing.Size(133, 23);
             this.MenuLabel.TabIndex = 2;
             this.MenuLabel.Text = "Bull Taxi | Mеню";
             // 
@@ -272,9 +271,9 @@
             this.UpperPanel.Controls.Add(this.MenuLabel);
             this.UpperPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.UpperPanel.Location = new System.Drawing.Point(0, 0);
-            this.UpperPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UpperPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpperPanel.Name = "UpperPanel";
-            this.UpperPanel.Size = new System.Drawing.Size(971, 35);
+            this.UpperPanel.Size = new System.Drawing.Size(1920, 43);
             this.UpperPanel.TabIndex = 2;
             this.UpperPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.UpperPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
@@ -283,10 +282,10 @@
             // btnHam
             // 
             this.btnHam.Image = ((System.Drawing.Image)(resources.GetObject("btnHam.Image")));
-            this.btnHam.Location = new System.Drawing.Point(2, 1);
-            this.btnHam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHam.Location = new System.Drawing.Point(3, 1);
+            this.btnHam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(40, 32);
+            this.btnHam.Size = new System.Drawing.Size(53, 39);
             this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnHam.TabIndex = 14;
             this.btnHam.TabStop = false;
@@ -294,16 +293,16 @@
             // 
             // BullTaxiMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(971, 718);
+            this.ClientSize = new System.Drawing.Size(1920, 884);
             this.ControlBox = false;
             this.Controls.Add(this.SidebarPanel);
             this.Controls.Add(this.UpperPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BullTaxiMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BullTaxiMainForm";

@@ -92,5 +92,18 @@ namespace BullTaxiProject11
                 MessageBox.Show(dict["Message"]);
             }
         }
+
+        private void FullSizeButton_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                Size = Screen.PrimaryScreen.WorkingArea.Size;
+                WindowState = FormWindowState.Normal;
+            }
+        }
     }
 }
