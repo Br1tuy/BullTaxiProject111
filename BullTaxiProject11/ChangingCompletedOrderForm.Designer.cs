@@ -112,7 +112,7 @@
             this.panel7.BackColor = System.Drawing.SystemColors.Control;
             this.panel7.Controls.Add(this.NewStartingAddress);
             this.panel7.Controls.Add(this.pictureBox8);
-            this.panel7.Location = new System.Drawing.Point(11, 118);
+            this.panel7.Location = new System.Drawing.Point(111, 124);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(450, 46);
             this.panel7.TabIndex = 6;
@@ -155,7 +155,7 @@
             this.panel9.BackColor = System.Drawing.SystemColors.Control;
             this.panel9.Controls.Add(this.pictureBox9);
             this.panel9.Controls.Add(this.NewFinalAddress);
-            this.panel9.Location = new System.Drawing.Point(13, 173);
+            this.panel9.Location = new System.Drawing.Point(113, 179);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(450, 46);
             this.panel9.TabIndex = 5;
@@ -184,7 +184,7 @@
             this.WindowNameLabel.AutoSize = true;
             this.WindowNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WindowNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.WindowNameLabel.Location = new System.Drawing.Point(5, 39);
+            this.WindowNameLabel.Location = new System.Drawing.Point(111, 47);
             this.WindowNameLabel.Name = "WindowNameLabel";
             this.WindowNameLabel.Size = new System.Drawing.Size(429, 32);
             this.WindowNameLabel.TabIndex = 3;
@@ -195,7 +195,7 @@
             this.NewAddressLabel.AutoSize = true;
             this.NewAddressLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewAddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.NewAddressLabel.Location = new System.Drawing.Point(5, 82);
+            this.NewAddressLabel.Location = new System.Drawing.Point(105, 88);
             this.NewAddressLabel.Name = "NewAddressLabel";
             this.NewAddressLabel.Size = new System.Drawing.Size(435, 32);
             this.NewAddressLabel.TabIndex = 12;
@@ -206,7 +206,7 @@
             this.IDLabel.AutoSize = true;
             this.IDLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.IDLabel.Location = new System.Drawing.Point(5, 559);
+            this.IDLabel.Location = new System.Drawing.Point(293, 559);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.Size = new System.Drawing.Size(46, 32);
             this.IDLabel.TabIndex = 16;
@@ -247,7 +247,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.NewOpeningTime);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(11, 358);
+            this.panel1.Location = new System.Drawing.Point(242, 356);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(147, 46);
             this.panel1.TabIndex = 19;
@@ -276,7 +276,7 @@
             this.NewTimeLabel.AutoSize = true;
             this.NewTimeLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewTimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.NewTimeLabel.Location = new System.Drawing.Point(3, 323);
+            this.NewTimeLabel.Location = new System.Drawing.Point(17, 321);
             this.NewTimeLabel.Name = "NewTimeLabel";
             this.NewTimeLabel.Size = new System.Drawing.Size(580, 32);
             this.NewTimeLabel.TabIndex = 20;
@@ -287,7 +287,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.ID);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(13, 595);
+            this.panel3.Location = new System.Drawing.Point(244, 594);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(147, 46);
             this.panel3.TabIndex = 20;
@@ -346,7 +346,7 @@
             this.panel11.BackColor = System.Drawing.SystemColors.Control;
             this.panel11.Controls.Add(this.NewClosingTime);
             this.panel11.Controls.Add(this.pictureBox6);
-            this.panel11.Location = new System.Drawing.Point(13, 411);
+            this.panel11.Location = new System.Drawing.Point(244, 409);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(147, 46);
             this.panel11.TabIndex = 24;
@@ -375,7 +375,7 @@
             this.NewPriceLabel.AutoSize = true;
             this.NewPriceLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewPriceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.NewPriceLabel.Location = new System.Drawing.Point(7, 467);
+            this.NewPriceLabel.Location = new System.Drawing.Point(221, 470);
             this.NewPriceLabel.Name = "NewPriceLabel";
             this.NewPriceLabel.Size = new System.Drawing.Size(194, 32);
             this.NewPriceLabel.TabIndex = 23;
@@ -386,7 +386,7 @@
             this.panel5.BackColor = System.Drawing.SystemColors.Control;
             this.panel5.Controls.Add(this.NewPrice);
             this.panel5.Controls.Add(this.pictureBox5);
-            this.panel5.Location = new System.Drawing.Point(11, 503);
+            this.panel5.Location = new System.Drawing.Point(242, 505);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(147, 46);
             this.panel5.TabIndex = 20;
@@ -415,7 +415,7 @@
             this.NewDriverLabel.AutoSize = true;
             this.NewDriverLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NewDriverLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.NewDriverLabel.Location = new System.Drawing.Point(7, 230);
+            this.NewDriverLabel.Location = new System.Drawing.Point(236, 229);
             this.NewDriverLabel.Name = "NewDriverLabel";
             this.NewDriverLabel.Size = new System.Drawing.Size(179, 32);
             this.NewDriverLabel.TabIndex = 22;
@@ -426,7 +426,7 @@
             this.panel4.BackColor = System.Drawing.SystemColors.Control;
             this.panel4.Controls.Add(this.NewDriver);
             this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Location = new System.Drawing.Point(11, 266);
+            this.panel4.Location = new System.Drawing.Point(199, 264);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(250, 46);
             this.panel4.TabIndex = 21;

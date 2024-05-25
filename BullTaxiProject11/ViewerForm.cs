@@ -11,11 +11,18 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace BullTaxiProject11
 {
     public partial class ViewerForm : Form
     {
+        ViewerForm viewer;
+        Point dragCursorPoint;
+        Point dragFormPoint;
+        bool dragging = false;
+        
+
         Dictionary<string, string> dict;
         Dictionary<string, Dictionary<string, string>> completed_orders;
         public ViewerForm()
@@ -103,6 +110,29 @@ namespace BullTaxiProject11
             {
                 Size = Screen.PrimaryScreen.WorkingArea.Size;
                 WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+
+            Uri uri = new Uri("http://127.0.0.1:8000/logaut/");
+            Dictionary<string, string> parameters = new Dictionary<string, string>();
+
+            FormUrlEncodedContent form = new FormUrlEncodedContent(parameters);
+
+            var answer = ProgramClient.Client.PostAsync(uri, form).Result;
+            Dictionary<string, string> dict = JsonSerializer.Deserialize<Dictionary<string, string>>(answer.Content.ReadAsStringAsync().Result);
+
+            if (dict["Status"] == "Success")
+            {
+                this.Close();
+                LoginForm LoginForm = new LoginForm();
+                LoginForm.Show();
+            }
+            else
+            {
+                MessageBox.Show(dict["Message"]);
             }
         }
     }

@@ -200,7 +200,7 @@
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.ID);
             this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Location = new System.Drawing.Point(12, 373);
+            this.panel3.Location = new System.Drawing.Point(66, 372);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(147, 46);
             this.panel3.TabIndex = 20;
@@ -229,7 +229,7 @@
             this.TimeLabel.AutoSize = true;
             this.TimeLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TimeLabel.Location = new System.Drawing.Point(6, 243);
+            this.TimeLabel.Location = new System.Drawing.Point(60, 243);
             this.TimeLabel.Name = "TimeLabel";
             this.TimeLabel.Size = new System.Drawing.Size(449, 32);
             this.TimeLabel.TabIndex = 20;
@@ -240,7 +240,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.NewOpeningTime);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 279);
+            this.panel1.Location = new System.Drawing.Point(66, 278);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(147, 46);
             this.panel1.TabIndex = 19;
@@ -299,7 +299,7 @@
             this.IDLabel.AutoSize = true;
             this.IDLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IDLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.IDLabel.Location = new System.Drawing.Point(6, 337);
+            this.IDLabel.Location = new System.Drawing.Point(60, 336);
             this.IDLabel.Name = "IDLabel";
             this.IDLabel.Size = new System.Drawing.Size(46, 32);
             this.IDLabel.TabIndex = 16;
@@ -310,7 +310,7 @@
             this.AddressLabel.AutoSize = true;
             this.AddressLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.AddressLabel.Location = new System.Drawing.Point(5, 88);
+            this.AddressLabel.Location = new System.Drawing.Point(53, 90);
             this.AddressLabel.Name = "AddressLabel";
             this.AddressLabel.Size = new System.Drawing.Size(435, 32);
             this.AddressLabel.TabIndex = 12;
@@ -321,7 +321,7 @@
             this.panel9.BackColor = System.Drawing.SystemColors.Control;
             this.panel9.Controls.Add(this.pictureBox9);
             this.panel9.Controls.Add(this.NewFinalAddress);
-            this.panel9.Location = new System.Drawing.Point(11, 183);
+            this.panel9.Location = new System.Drawing.Point(59, 185);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(450, 46);
             this.panel9.TabIndex = 5;
@@ -364,7 +364,7 @@
             this.panel7.BackColor = System.Drawing.SystemColors.Control;
             this.panel7.Controls.Add(this.NewStartingAddress);
             this.panel7.Controls.Add(this.pictureBox8);
-            this.panel7.Location = new System.Drawing.Point(11, 125);
+            this.panel7.Location = new System.Drawing.Point(59, 127);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(450, 46);
             this.panel7.TabIndex = 6;

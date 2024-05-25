@@ -101,7 +101,7 @@
             this.AddressLabel.AutoSize = true;
             this.AddressLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddressLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.AddressLabel.Location = new System.Drawing.Point(6, 132);
+            this.AddressLabel.Location = new System.Drawing.Point(88, 130);
             this.AddressLabel.Name = "AddressLabel";
             this.AddressLabel.Size = new System.Drawing.Size(389, 32);
             this.AddressLabel.TabIndex = 12;
@@ -129,7 +129,7 @@
             this.TimeLabel.AutoSize = true;
             this.TimeLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TimeLabel.Location = new System.Drawing.Point(6, 317);
+            this.TimeLabel.Location = new System.Drawing.Point(88, 313);
             this.TimeLabel.Name = "TimeLabel";
             this.TimeLabel.Size = new System.Drawing.Size(360, 32);
             this.TimeLabel.TabIndex = 18;
@@ -140,7 +140,7 @@
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.OpeningTime);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(15, 371);
+            this.panel1.Location = new System.Drawing.Point(52, 369);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(450, 46);
             this.panel1.TabIndex = 17;
@@ -169,7 +169,7 @@
             this.WindowNameLabel.AutoSize = true;
             this.WindowNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WindowNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.WindowNameLabel.Location = new System.Drawing.Point(6, 62);
+            this.WindowNameLabel.Location = new System.Drawing.Point(46, 62);
             this.WindowNameLabel.Name = "WindowNameLabel";
             this.WindowNameLabel.Size = new System.Drawing.Size(460, 32);
             this.WindowNameLabel.TabIndex = 3;
@@ -223,7 +223,7 @@
             this.panel7.BackColor = System.Drawing.SystemColors.Control;
             this.panel7.Controls.Add(this.StartingAddress);
             this.panel7.Controls.Add(this.pictureBox8);
-            this.panel7.Location = new System.Drawing.Point(15, 186);
+            this.panel7.Location = new System.Drawing.Point(52, 184);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(450, 46);
             this.panel7.TabIndex = 6;
@@ -266,7 +266,7 @@
             this.panel9.BackColor = System.Drawing.SystemColors.Control;
             this.panel9.Controls.Add(this.pictureBox9);
             this.panel9.Controls.Add(this.FinalAddress);
-            this.panel9.Location = new System.Drawing.Point(15, 252);
+            this.panel9.Location = new System.Drawing.Point(52, 250);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(450, 46);
             this.panel9.TabIndex = 5;
