@@ -110,8 +110,8 @@ namespace MainFormBullTaxi
              }
             */
             this.Hide();
-            BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
-            bullTaxiMainForm.Show();
+            ViewerForm viewerForm = new ViewerForm();
+            viewerForm.Show();
         }
 
         private void EmailLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

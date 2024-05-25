@@ -52,19 +52,18 @@
             this.panel10.Controls.Add(this.LogoPictureBox);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(225, 718);
+            this.panel10.Size = new System.Drawing.Size(300, 1194);
             this.panel10.TabIndex = 5;
             // 
             // DevelopLabel
             // 
             this.DevelopLabel.Font = new System.Drawing.Font("Georgia", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.DevelopLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.DevelopLabel.Location = new System.Drawing.Point(27, 899);
-            this.DevelopLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DevelopLabel.Location = new System.Drawing.Point(35, 1160);
             this.DevelopLabel.Name = "DevelopLabel";
-            this.DevelopLabel.Size = new System.Drawing.Size(169, 28);
+            this.DevelopLabel.Size = new System.Drawing.Size(225, 34);
             this.DevelopLabel.TabIndex = 3;
             this.DevelopLabel.Text = "Develop by Br1tuy";
             // 
@@ -73,20 +72,19 @@
             this.TaxiNameLabel.AutoSize = true;
             this.TaxiNameLabel.Font = new System.Drawing.Font("Georgia", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TaxiNameLabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TaxiNameLabel.Location = new System.Drawing.Point(70, 166);
-            this.TaxiNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TaxiNameLabel.Location = new System.Drawing.Point(93, 204);
             this.TaxiNameLabel.Name = "TaxiNameLabel";
-            this.TaxiNameLabel.Size = new System.Drawing.Size(98, 27);
+            this.TaxiNameLabel.Size = new System.Drawing.Size(125, 32);
             this.TaxiNameLabel.TabIndex = 2;
             this.TaxiNameLabel.Text = "Bull Taxi";
             // 
             // LogoPictureBox
             // 
             this.LogoPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("LogoPictureBox.Image")));
-            this.LogoPictureBox.Location = new System.Drawing.Point(47, 12);
-            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoPictureBox.Location = new System.Drawing.Point(63, 15);
+            this.LogoPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogoPictureBox.Name = "LogoPictureBox";
-            this.LogoPictureBox.Size = new System.Drawing.Size(148, 155);
+            this.LogoPictureBox.Size = new System.Drawing.Size(197, 191);
             this.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoPictureBox.TabIndex = 0;
             this.LogoPictureBox.TabStop = false;
@@ -98,10 +96,10 @@
             this.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CloseButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.CloseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.CloseButton.Location = new System.Drawing.Point(1252, 0);
-            this.CloseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CloseButton.Location = new System.Drawing.Point(1883, 0);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(30, 32);
+            this.CloseButton.Size = new System.Drawing.Size(40, 39);
             this.CloseButton.TabIndex = 12;
             this.CloseButton.Text = "X";
             this.CloseButton.UseVisualStyleBackColor = true;
@@ -114,10 +112,10 @@
             this.TurnButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TurnButton.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TurnButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
-            this.TurnButton.Location = new System.Drawing.Point(1218, 0);
-            this.TurnButton.Margin = new System.Windows.Forms.Padding(2);
+            this.TurnButton.Location = new System.Drawing.Point(1837, 0);
+            this.TurnButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TurnButton.Name = "TurnButton";
-            this.TurnButton.Size = new System.Drawing.Size(30, 32);
+            this.TurnButton.Size = new System.Drawing.Size(40, 39);
             this.TurnButton.TabIndex = 13;
             this.TurnButton.Text = "-";
             this.TurnButton.UseVisualStyleBackColor = true;
@@ -127,21 +125,21 @@
             // 
             this.Table.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Table.Location = new System.Drawing.Point(238, 86);
-            this.Table.Margin = new System.Windows.Forms.Padding(2);
+            this.Table.Location = new System.Drawing.Point(317, 106);
+            this.Table.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Table.Name = "Table";
             this.Table.RowHeadersWidth = 51;
             this.Table.RowTemplate.Height = 24;
-            this.Table.Size = new System.Drawing.Size(1031, 762);
+            this.Table.Size = new System.Drawing.Size(1595, 1077);
             this.Table.TabIndex = 14;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.ViewCompletedOrderButton);
-            this.panel3.Location = new System.Drawing.Point(238, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(317, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(188, 57);
+            this.panel3.Size = new System.Drawing.Size(251, 70);
             this.panel3.TabIndex = 15;
             // 
             // ViewCompletedOrderButton
@@ -149,10 +147,10 @@
             this.ViewCompletedOrderButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.ViewCompletedOrderButton.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ViewCompletedOrderButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ViewCompletedOrderButton.Location = new System.Drawing.Point(-2, 0);
-            this.ViewCompletedOrderButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ViewCompletedOrderButton.Location = new System.Drawing.Point(-3, 0);
+            this.ViewCompletedOrderButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ViewCompletedOrderButton.Name = "ViewCompletedOrderButton";
-            this.ViewCompletedOrderButton.Size = new System.Drawing.Size(188, 57);
+            this.ViewCompletedOrderButton.Size = new System.Drawing.Size(251, 70);
             this.ViewCompletedOrderButton.TabIndex = 0;
             this.ViewCompletedOrderButton.Text = "Показ завершених замовленнь";
             this.ViewCompletedOrderButton.UseVisualStyleBackColor = false;
@@ -160,16 +158,16 @@
             // 
             // ViewerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1167, 718);
+            this.ClientSize = new System.Drawing.Size(1924, 1194);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.Table);
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.TurnButton);
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ViewerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ViewerForm";
