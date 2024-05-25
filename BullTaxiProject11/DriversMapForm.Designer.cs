@@ -68,7 +68,7 @@
             this.LoginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.LoginLabel.Location = new System.Drawing.Point(1771, 147);
             this.LoginLabel.Name = "LoginLabel";
-            this.LoginLabel.Size = new System.Drawing.Size(70, 27);
+            this.LoginLabel.Size = new System.Drawing.Size(87, 32);
             this.LoginLabel.TabIndex = 31;
             this.LoginLabel.Text = "Логін";
             // 
@@ -78,7 +78,7 @@
             this.Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(124)))), ((int)(((byte)(142)))));
             this.Login.Location = new System.Drawing.Point(55, 10);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(71, 23);
+            this.Login.Size = new System.Drawing.Size(71, 26);
             this.Login.TabIndex = 5;
             // 
             // pictureBox3
@@ -118,11 +118,11 @@
             // 
             this.Table.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Table.Location = new System.Drawing.Point(269, 49);
+            this.Table.Location = new System.Drawing.Point(279, 59);
             this.Table.Name = "Table";
             this.Table.RowHeadersWidth = 51;
             this.Table.RowTemplate.Height = 24;
-            this.Table.Size = new System.Drawing.Size(298, 1144);
+            this.Table.Size = new System.Drawing.Size(259, 1144);
             this.Table.TabIndex = 30;
             // 
             // ViewDriverButton
@@ -205,7 +205,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(74, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 27);
+            this.label2.Size = new System.Drawing.Size(125, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Bull Taxi";
             // 
@@ -239,7 +239,7 @@
             this.Map.GrayScaleMode = false;
             this.Map.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.Map.LevelsKeepInMemory = 5;
-            this.Map.Location = new System.Drawing.Point(573, 49);
+            this.Map.Location = new System.Drawing.Point(544, 49);
             this.Map.MarkersEnabled = true;
             this.Map.MaxZoom = 2;
             this.Map.MinZoom = 2;
@@ -253,7 +253,7 @@
             this.Map.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.Map.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.Map.ShowTileGridLines = false;
-            this.Map.Size = new System.Drawing.Size(1112, 1144);
+            this.Map.Size = new System.Drawing.Size(1136, 1144);
             this.Map.TabIndex = 28;
             this.Map.Zoom = 0D;
             // 
