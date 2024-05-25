@@ -97,9 +97,7 @@ namespace BullTaxi
 
                 if (dict["Status"] == "Success")
                 {
-                    this.Hide();
-                    BullTaxiMainForm bullTaxiMainForm = new BullTaxiMainForm();
-                    bullTaxiMainForm.Show();
+                    this.Close();
                 }
                 else
                 {
