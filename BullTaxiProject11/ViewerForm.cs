@@ -115,7 +115,6 @@ namespace BullTaxiProject11
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-
             Uri uri = new Uri("http://127.0.0.1:8000/logaut/");
             Dictionary<string, string> parameters = new Dictionary<string, string>();
 

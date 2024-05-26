@@ -52,7 +52,6 @@ namespace MainFormBullTaxi
 
         private void EntryButton_Click(object sender, EventArgs e)
         {
-            /*
              Uri uri = new Uri("http://127.0.0.1:8000/login/");
 
              if (Login.Text == "") MessageBox.Show("Введіть логін.");
@@ -108,10 +107,6 @@ namespace MainFormBullTaxi
                  }
 
              }
-            */
-            this.Hide();
-            ViewerForm viewerForm = new ViewerForm();
-            viewerForm.Show();
         }
 
         private void EmailLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
