@@ -85,7 +85,7 @@ namespace BullTaxiProject11
                 Table.Rows.Clear();
                 Table.Columns.Clear();
 
-                for (int c = 0; c < 7; c++)
+                for ( int c = 0; c < 7; c++)
                 {
                     Table.Columns.Add(table_completed_columns[c], table_completed_headers[c]);
                 }
